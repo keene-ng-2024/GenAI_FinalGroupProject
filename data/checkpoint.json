@@ -1,0 +1,702 @@
+{
+  "1": {
+    "index": "1",
+    "title": "Ask Me Anything: A simple strategy for prompting language models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.02441v3",
+    "source": "arXiv:2210.02441v3"
+  },
+  "2": {
+    "index": "2",
+    "title": "UNDERSTANDING HTML WITH LARGE LANGUAGE MODELS",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.03945v2",
+    "source": "arXiv:2210.03945v2"
+  },
+  "3": {
+    "index": "3",
+    "title": "Learning Entailment-Based Sentence Embeddings from Natural Language Inference",
+    "doi": "10.7717/peerj-cs.2957",
+    "pdf_url": "",
+    "source": ""
+  },
+  "4": {
+    "index": "4",
+    "title": "ThinkSum: Probabilistic reasoning over sets using large language models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.01293v2",
+    "source": "arXiv:2210.01293v2"
+  },
+  "5": {
+    "index": "5",
+    "title": "MVP: Multi-task Supervised Pre-training for Natural Language Generation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2206.12131v3",
+    "source": "arXiv:2206.12131v3"
+  },
+  "6": {
+    "index": "6",
+    "title": "LAMOL: LAnguage MOdeling for Lifelong Language Learning",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/1909.03329v2",
+    "source": "arXiv:1909.03329v2"
+  },
+  "7": {
+    "index": "7",
+    "title": "Contextualized Generative Retrieval",
+    "doi": "10.6028/nist.sp.500-324.car-mpiid5",
+    "pdf_url": "",
+    "source": ""
+  },
+  "8": {
+    "index": "8",
+    "title": "Task Ambiguity in Humans and Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2212.10711v1",
+    "source": "arXiv:2212.10711v1"
+  },
+  "9": {
+    "index": "9",
+    "title": "Scaling Laws for Neural Machine Translation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2109.07740v1",
+    "source": "arXiv:2109.07740v1"
+  },
+  "10": {
+    "index": "10",
+    "title": "UniDoc: Unified Pretraining Framework for Document Understanding",
+    "doi": "10.62891/d4deb13d",
+    "pdf_url": "",
+    "source": ""
+  },
+  "11": {
+    "index": "11",
+    "title": "True Few-Shot Learning with Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2105.11447v1",
+    "source": "arXiv:2105.11447v1"
+  },
+  "12": {
+    "index": "12",
+    "title": "Preserving Semantics in Textual Adversarial Attacks",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2211.04205v2",
+    "source": "arXiv:2211.04205v2"
+  },
+  "13": {
+    "index": "13",
+    "title": "Learning by Distilling Context",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2209.15189v1",
+    "source": "arXiv:2209.15189v1"
+  },
+  "14": {
+    "index": "14",
+    "title": "Downstream Datasets Make Surprisingly Good Pretraining Corpora",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2209.14389v2",
+    "source": "arXiv:2209.14389v2"
+  },
+  "15": {
+    "index": "15",
+    "title": "DocPrompting: Generating Code by Retrieving the Docs",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2207.05987v3",
+    "source": "arXiv:2207.05987v3"
+  },
+  "16": {
+    "index": "16",
+    "title": "Universal Sentence Representations Learning with Conditional Masked Language Model",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2012.14388v3",
+    "source": "arXiv:2012.14388v3"
+  },
+  "17": {
+    "index": "17",
+    "title": "Evaluating Gender Bias in Natural Language Inference",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2105.05541v1",
+    "source": "arXiv:2105.05541v1"
+  },
+  "18": {
+    "index": "18",
+    "title": "WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2304.04358v1",
+    "source": "arXiv:2304.04358v1"
+  },
+  "19": {
+    "index": "19",
+    "title": "Generating Training Data with Language Models: Towards Zero-Shot Language Understanding",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2202.04538v2",
+    "source": "arXiv:2202.04538v2"
+  },
+  "20": {
+    "index": "20",
+    "title": "Identifying the Limits of Cross-Domain Knowledge Transfer for Pretrained Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2104.08410v1",
+    "source": "arXiv:2104.08410v1"
+  },
+  "21": {
+    "index": "21",
+    "title": "Contrastive Novelty Learning: Anticipating Outliers with Large Language Models",
+    "doi": "10.18653/v1/2023.acl-long.658",
+    "pdf_url": "https://aclanthology.org/2023.acl-long.658.pdf",
+    "source": "Unpaywall"
+  },
+  "22": {
+    "index": "22",
+    "title": "K-PLUG: KNOWLEDGE-INJECTED PRE-TRAINED LANGUAGE MODEL FOR NATURAL LANGUAGE UNDERSTANDING AND GENERATION",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2104.06960v2",
+    "source": "arXiv:2104.06960v2"
+  },
+  "23": {
+    "index": "23",
+    "title": "Later Span Adaptation for Language Understanding",
+    "doi": "10.2139/ssrn.4482536",
+    "pdf_url": "",
+    "source": ""
+  },
+  "24": {
+    "index": "24",
+    "title": "Pre-trained Language Models can be Fully Zero-Shot Learners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2212.06950v2",
+    "source": "arXiv:2212.06950v2"
+  },
+  "25": {
+    "index": "25",
+    "title": "Representation and Bias in Multilingual NLP: Insights from Controlled Experiments on Conditional Language Modeling",
+    "doi": "10.18653/v1/2021.repl4nlp-1.4",
+    "pdf_url": "https://aclanthology.org/2021.repl4nlp-1.4.pdf",
+    "source": "Unpaywall"
+  },
+  "26": {
+    "index": "26",
+    "title": "Closed Boundary Learning for NLP Classification Tasks with the Universum Class",
+    "doi": "10.18653/v1/2023.findings-emnlp.1038",
+    "pdf_url": "https://aclanthology.org/2023.findings-emnlp.1038.pdf",
+    "source": "Unpaywall"
+  },
+  "27": {
+    "index": "27",
+    "title": "Improving Language Model Pretraining with Text Structure Information",
+    "doi": "10.18653/v1/2025.babylm-main.1",
+    "pdf_url": "https://aclanthology.org/2025.babylm-main.1.pdf",
+    "source": "Unpaywall"
+  },
+  "28": {
+    "index": "28",
+    "title": "Unsupervised Neural Machine Translation with Generative Language Models Only",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.05448v1",
+    "source": "arXiv:2110.05448v1"
+  },
+  "29": {
+    "index": "29",
+    "title": "Leveraging Large Language Models for Multiple Choice Question Answering",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.12353v3",
+    "source": "arXiv:2210.12353v3"
+  },
+  "30": {
+    "index": "30",
+    "title": "Pretrained Language Model in Continual Learning: A Comparative Study",
+    "doi": "10.2196/preprints.34834",
+    "pdf_url": "",
+    "source": ""
+  },
+  "31": {
+    "index": "31",
+    "title": "One Question Answering Model for Many Languages with Cross-lingual Dense Passage Retrieval",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2107.11976v2",
+    "source": "arXiv:2107.11976v2"
+  },
+  "32": {
+    "index": "32",
+    "title": "Exploring extreme parameter compression for pre-trained language models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2205.10036v1",
+    "source": "arXiv:2205.10036v1"
+  },
+  "33": {
+    "index": "33",
+    "title": "How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2112.11668v1",
+    "source": "arXiv:2112.11668v1"
+  },
+  "34": {
+    "index": "34",
+    "title": "On Robust Prefix-Tuning for Text Classification",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2203.10378v1",
+    "source": "arXiv:2203.10378v1"
+  },
+  "35": {
+    "index": "35",
+    "title": "Forgetful causal masking makes causal language models better zero-shot learners",
+    "doi": "10.18653/v1/2023.acl-long.128",
+    "pdf_url": "https://aclanthology.org/2023.acl-long.128.pdf",
+    "source": "Unpaywall"
+  },
+  "36": {
+    "index": "36",
+    "title": "LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.07298v3",
+    "source": "arXiv:2110.07298v3"
+  },
+  "37": {
+    "index": "37",
+    "title": "Data-Efficient Finetuning Using Cross-Task Nearest Neighbors",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2212.00196v2",
+    "source": "arXiv:2212.00196v2"
+  },
+  "38": {
+    "index": "38",
+    "title": "No Parameters Left Behind: Sensitivity Guided Adaptive Learning Rate for Training Large Transformer Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2202.02664v2",
+    "source": "arXiv:2202.02664v2"
+  },
+  "39": {
+    "index": "39",
+    "title": "How (Un)Fair is Text Summarization?",
+    "doi": "10.20944/preprints202501.2321.v1",
+    "pdf_url": "https://www.preprints.org/frontend/manuscript/3dddd28c17737a55bfb33e767c50968c/download_pub",
+    "source": "Unpaywall"
+  },
+  "40": {
+    "index": "40",
+    "title": "Teaching Algorithmic Reasoning via In-context Learning",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2211.09066v1",
+    "source": "arXiv:2211.09066v1"
+  },
+  "41": {
+    "index": "41",
+    "title": "Towards a Unified View of Parameter-Efficient Transfer Learning",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.04366v3",
+    "source": "arXiv:2110.04366v3"
+  },
+  "42": {
+    "index": "42",
+    "title": "Charformer: Fast Character Transformers via Gradient-based Subword Tokenization",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2106.12672v3",
+    "source": "arXiv:2106.12672v3"
+  },
+  "43": {
+    "index": "43",
+    "title": "Pretrain Knowledge-Aware Language Models",
+    "doi": "10.18653/v1/2020.findings-emnlp.25",
+    "pdf_url": "https://www.aclweb.org/anthology/2020.findings-emnlp.25.pdf",
+    "source": "Unpaywall"
+  },
+  "44": {
+    "index": "44",
+    "title": "Contextual Temperature for Language Modeling",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2012.13575v1",
+    "source": "arXiv:2012.13575v1"
+  },
+  "45": {
+    "index": "45",
+    "title": "Large Language Models Can Self-improve",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.11610v2",
+    "source": "arXiv:2210.11610v2"
+  },
+  "46": {
+    "index": "46",
+    "title": "Transcormer: Transformer for Sentence Scoring with Sliding Language Modeling",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2205.12986v4",
+    "source": "arXiv:2205.12986v4"
+  },
+  "47": {
+    "index": "47",
+    "title": "SpanDrop: Simple and Effective Counterfactual Learning for Long Sequences",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2208.02169v1",
+    "source": "arXiv:2208.02169v1"
+  },
+  "48": {
+    "index": "48",
+    "title": "Leveraging Automated Unit Tests for Unsupervised Code Translation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.06773v2",
+    "source": "arXiv:2110.06773v2"
+  },
+  "49": {
+    "index": "49",
+    "title": "P-Adapters: Robustly Extracting Factual Information from Language Models with Diverse Prompts",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.07280v2",
+    "source": "arXiv:2110.07280v2"
+  },
+  "50": {
+    "index": "50",
+    "title": "Finetuned Language Models are Zero-Shot Learners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2109.01652v5",
+    "source": "arXiv:2109.01652v5"
+  },
+  "51": {
+    "index": "51",
+    "title": "Same Pre-training Loss, Better Downstream: Implicit Bias Matters for Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.14199v1",
+    "source": "arXiv:2210.14199v1"
+  },
+  "52": {
+    "index": "52",
+    "title": "Generate, Annotate, and Learn: Generative Models Advance Self-Training and Knowledge Distillation",
+    "doi": "10.14711/thesis-hdl151306",
+    "pdf_url": "",
+    "source": ""
+  },
+  "53": {
+    "index": "53",
+    "title": "ULF: UNSUPERVISED LABELING FUNCTION CORRECTION USING CROSS-VALIDATION FOR WEAK SUPERVISION",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2204.06863v4",
+    "source": "arXiv:2204.06863v4"
+  },
+  "54": {
+    "index": "54",
+    "title": "Pre-Trained Language Models for Interactive Decision-Making",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2202.01771v4",
+    "source": "arXiv:2202.01771v4"
+  },
+  "55": {
+    "index": "55",
+    "title": "Think Big, Teach Small: Do Language Models Distil Occam\u2019s Razor?",
+    "doi": "10.1007/978-0-387-68222-8_35",
+    "pdf_url": "",
+    "source": ""
+  },
+  "56": {
+    "index": "56",
+    "title": "Human-Guided Fair Classification for Natural Language Processing",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2212.10154v2",
+    "source": "arXiv:2212.10154v2"
+  },
+  "57": {
+    "index": "57",
+    "title": "CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2203.13474v5",
+    "source": "arXiv:2203.13474v5"
+  },
+  "58": {
+    "index": "58",
+    "title": "Recursion of Thought: Divide and Conquer Reasoning with Language Models",
+    "doi": "10.18653/v1/2023.findings-acl.40",
+    "pdf_url": "https://aclanthology.org/2023.findings-acl.40.pdf",
+    "source": "Unpaywall"
+  },
+  "59": {
+    "index": "59",
+    "title": "BertNet: Harvesting Knowledge Graphs from Pretrained Language Models",
+    "doi": "10.18653/v1/2023.findings-acl.309",
+    "pdf_url": "https://aclanthology.org/2023.findings-acl.309.pdf",
+    "source": "Unpaywall"
+  },
+  "60": {
+    "index": "60",
+    "title": "ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2111.10952v2",
+    "source": "arXiv:2111.10952v2"
+  },
+  "61": {
+    "index": "61",
+    "title": "Thrust: Adaptively Propels Large Language Models with External Knowledge",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2307.10442v2",
+    "source": "arXiv:2307.10442v2"
+  },
+  "62": {
+    "index": "62",
+    "title": "Large Language Models are Human-Level Prompt Engineers",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2211.01910v2",
+    "source": "arXiv:2211.01910v2"
+  },
+  "63": {
+    "index": "63",
+    "title": "Multitask Prompted Training Enables Zero-Shot Task Generalization",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.08207v3",
+    "source": "arXiv:2110.08207v3"
+  },
+  "64": {
+    "index": "64",
+    "title": "Quantifying Exposure Bias for Open-ended Language Generation",
+    "doi": "10.18653/v1/2022.gebnlp-1.9",
+    "pdf_url": "https://aclanthology.org/2022.gebnlp-1.9.pdf",
+    "source": "Unpaywall"
+  },
+  "65": {
+    "index": "65",
+    "title": "Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2108.13161v7",
+    "source": "arXiv:2108.13161v7"
+  },
+  "66": {
+    "index": "66",
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2203.11171v4",
+    "source": "arXiv:2203.11171v4"
+  },
+  "67": {
+    "index": "67",
+    "title": "Cramming: Training a language model on a single GPU in one day",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2212.14034v1",
+    "source": "arXiv:2212.14034v1"
+  },
+  "68": {
+    "index": "68",
+    "title": "Mind the Gap: Assessing Temporal Generalization in Neural Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2102.01951v2",
+    "source": "arXiv:2102.01951v2"
+  },
+  "69": {
+    "index": "69",
+    "title": "Overthinking the Truth: Understanding how Language Models process False Demonstrations",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2307.09476v3",
+    "source": "arXiv:2307.09476v3"
+  },
+  "70": {
+    "index": "70",
+    "title": "Grad2Task: Improved Few-shot Text Classification Using Gradients for Task Representation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2201.11576v1",
+    "source": "arXiv:2201.11576v1"
+  },
+  "71": {
+    "index": "71",
+    "title": "Bidirectional Language Models Are Also Few-shot Learners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2209.14500v2",
+    "source": "arXiv:2209.14500v2"
+  },
+  "72": {
+    "index": "72",
+    "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2106.09685v2",
+    "source": "arXiv:2106.09685v2"
+  },
+  "73": {
+    "index": "73",
+    "title": "Knowledge Unlearning for Mitigating Privacy Risks in Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.01504v2",
+    "source": "arXiv:2210.01504v2"
+  },
+  "74": {
+    "index": "74",
+    "title": "Mapping Language Models to Grounded Conceptual Spaces",
+    "doi": "10.1007/978-1-4614-3064-3_7",
+    "pdf_url": "",
+    "source": ""
+  },
+  "75": {
+    "index": "75",
+    "title": "COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2102.08473v2",
+    "source": "arXiv:2102.08473v2"
+  },
+  "76": {
+    "index": "76",
+    "title": "Capturing Structural Locality in Non-parametric Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.02870v3",
+    "source": "arXiv:2110.02870v3"
+  },
+  "77": {
+    "index": "77",
+    "title": "Differentially Private Fine-tuning of Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.06500v2",
+    "source": "arXiv:2110.06500v2"
+  },
+  "78": {
+    "index": "78",
+    "title": "Autoregressive Entity Retrieval",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2010.00904v3",
+    "source": "arXiv:2010.00904v3"
+  },
+  "79": {
+    "index": "79",
+    "title": "Explaining Patterns in Data with Language Models via Interpretable Autoprompting",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.01848v2",
+    "source": "arXiv:2210.01848v2"
+  },
+  "80": {
+    "index": "80",
+    "title": "Using Document Similarity Methods to create Parallel Datasets for Code Translation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.05423v1",
+    "source": "arXiv:2110.05423v1"
+  },
+  "81": {
+    "index": "81",
+    "title": "Internet-augmented language models through few-shot prompting for open-domain question answering",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2203.05115v2",
+    "source": "arXiv:2203.05115v2"
+  },
+  "82": {
+    "index": "82",
+    "title": "Towards Continual Knowledge Learning of Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.03215v4",
+    "source": "arXiv:2110.03215v4"
+  },
+  "83": {
+    "index": "83",
+    "title": "Deepening Hidden Representations from Pre-trained Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/1911.01940v2",
+    "source": "arXiv:1911.01940v2"
+  },
+  "84": {
+    "index": "84",
+    "title": "Out-of-Distribution Detection and Selective Generation for Conditional Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2209.15558v2",
+    "source": "arXiv:2209.15558v2"
+  },
+  "85": {
+    "index": "85",
+    "title": "Meta-Weighted Language Model Tuning for Augmentation-Enhanced Few-Shot Learning",
+    "doi": "10.14711/thesis-991013340459503412",
+    "pdf_url": "",
+    "source": ""
+  },
+  "86": {
+    "index": "86",
+    "title": "Knowledge-in-Context: Towards Knowledgeable Semi-Parametric Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.16433v3",
+    "source": "arXiv:2210.16433v3"
+  },
+  "87": {
+    "index": "87",
+    "title": "Interactively Generating Explanations for Transformer Language Models",
+    "doi": "10.3233/faia220218",
+    "pdf_url": "https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA220218",
+    "source": "Unpaywall"
+  },
+  "88": {
+    "index": "88",
+    "title": "Large language models are not zero-shot communicators",
+    "doi": "10.14711/thesis-991013223046403412",
+    "pdf_url": "",
+    "source": ""
+  },
+  "89": {
+    "index": "89",
+    "title": "SaMoE: Parameter Efficient MoE Language Models via Self-Adaptive Expert Combination",
+    "doi": "10.1021/acs.jmedchem.5c03511.s001",
+    "pdf_url": "",
+    "source": ""
+  },
+  "90": {
+    "index": "90",
+    "title": "Recitation-Augmented Language Models",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.01296v2",
+    "source": "arXiv:2210.01296v2"
+  },
+  "91": {
+    "index": "91",
+    "title": "Language models are multilingual chain-of-thought reasoners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2210.03057v1",
+    "source": "arXiv:2210.03057v1"
+  },
+  "92": {
+    "index": "92",
+    "title": "Memorizing Transformers",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2203.08913v1",
+    "source": "arXiv:2203.08913v1"
+  },
+  "93": {
+    "index": "93",
+    "title": "FLEX: Unifying Evaluation for Few-Shot NLP",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2107.07170v2",
+    "source": "arXiv:2107.07170v2"
+  },
+  "94": {
+    "index": "94",
+    "title": "Ensembles and Cocktails: Robust Finetuning for Natural Language Generation",
+    "doi": "10.18653/v1/2024.inlg-main.34",
+    "pdf_url": "https://aclanthology.org/2024.inlg-main.34.pdf",
+    "source": "Unpaywall"
+  },
+  "95": {
+    "index": "95",
+    "title": "Debiasing Pretrained Text Encoders by Paying Attention to Paying Attention",
+    "doi": "10.18653/v1/2022.emnlp-main.651",
+    "pdf_url": "https://aclanthology.org/2022.emnlp-main.651.pdf",
+    "source": "Unpaywall"
+  },
+  "96": {
+    "index": "96",
+    "title": "Selective Annotation Makes Language Models Better Few-Shot Learners",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2209.01975v1",
+    "source": "arXiv:2209.01975v1"
+  },
+  "97": {
+    "index": "97",
+    "title": "The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2110.04541v3",
+    "source": "arXiv:2110.04541v3"
+  },
+  "98": {
+    "index": "98",
+    "title": "Examining Scaling and Transfer of Language Model Architectures for Machine Translation",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2202.00528v3",
+    "source": "arXiv:2202.00528v3"
+  },
+  "99": {
+    "index": "99",
+    "title": "Does Entity Abstraction Help Generative Transformers Reason?",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2201.01787v2",
+    "source": "arXiv:2201.01787v2"
+  },
+  "100": {
+    "index": "100",
+    "title": "Words are all you need? Language as an approximation for human similarity judgments",
+    "doi": "",
+    "pdf_url": "https://arxiv.org/pdf/2206.04105v3",
+    "source": "arXiv:2206.04105v3"
+  }
+}
