@@ -1,0 +1,101 @@
+index,title,doi,pdf_url,source
+1,Ask Me Anything: A simple strategy for prompting language models,,https://arxiv.org/pdf/2210.02441v3,arXiv:2210.02441v3
+2,UNDERSTANDING HTML WITH LARGE LANGUAGE MODELS,,https://arxiv.org/pdf/2210.03945v2,arXiv:2210.03945v2
+3,Learning Entailment-Based Sentence Embeddings from Natural Language Inference,10.7717/peerj-cs.2957,,
+4,ThinkSum: Probabilistic reasoning over sets using large language models,,https://arxiv.org/pdf/2210.01293v2,arXiv:2210.01293v2
+5,MVP: Multi-task Supervised Pre-training for Natural Language Generation,,https://arxiv.org/pdf/2206.12131v3,arXiv:2206.12131v3
+6,LAMOL: LAnguage MOdeling for Lifelong Language Learning,,https://arxiv.org/pdf/1909.03329v2,arXiv:1909.03329v2
+7,Contextualized Generative Retrieval,10.6028/nist.sp.500-324.car-mpiid5,,
+8,Task Ambiguity in Humans and Language Models,,https://arxiv.org/pdf/2212.10711v1,arXiv:2212.10711v1
+9,Scaling Laws for Neural Machine Translation,,https://arxiv.org/pdf/2109.07740v1,arXiv:2109.07740v1
+10,UniDoc: Unified Pretraining Framework for Document Understanding,10.62891/d4deb13d,,
+11,True Few-Shot Learning with Language Models,,https://arxiv.org/pdf/2105.11447v1,arXiv:2105.11447v1
+12,Preserving Semantics in Textual Adversarial Attacks,,https://arxiv.org/pdf/2211.04205v2,arXiv:2211.04205v2
+13,Learning by Distilling Context,,https://arxiv.org/pdf/2209.15189v1,arXiv:2209.15189v1
+14,Downstream Datasets Make Surprisingly Good Pretraining Corpora,,https://arxiv.org/pdf/2209.14389v2,arXiv:2209.14389v2
+15,DocPrompting: Generating Code by Retrieving the Docs,,https://arxiv.org/pdf/2207.05987v3,arXiv:2207.05987v3
+16,Universal Sentence Representations Learning with Conditional Masked Language Model,,https://arxiv.org/pdf/2012.14388v3,arXiv:2012.14388v3
+17,Evaluating Gender Bias in Natural Language Inference,,https://arxiv.org/pdf/2105.05541v1,arXiv:2105.05541v1
+18,WebBrain: Learning to Generate Factually Correct Articles for Queries by Grounding on Large Web Corpus,,https://arxiv.org/pdf/2304.04358v1,arXiv:2304.04358v1
+19,Generating Training Data with Language Models: Towards Zero-Shot Language Understanding,,https://arxiv.org/pdf/2202.04538v2,arXiv:2202.04538v2
+20,Identifying the Limits of Cross-Domain Knowledge Transfer for Pretrained Models,,https://arxiv.org/pdf/2104.08410v1,arXiv:2104.08410v1
+21,Contrastive Novelty Learning: Anticipating Outliers with Large Language Models,10.18653/v1/2023.acl-long.658,https://aclanthology.org/2023.acl-long.658.pdf,Unpaywall
+22,K-PLUG: KNOWLEDGE-INJECTED PRE-TRAINED LANGUAGE MODEL FOR NATURAL LANGUAGE UNDERSTANDING AND GENERATION,,https://arxiv.org/pdf/2104.06960v2,arXiv:2104.06960v2
+23,Later Span Adaptation for Language Understanding,10.2139/ssrn.4482536,,
+24,Pre-trained Language Models can be Fully Zero-Shot Learners,,https://arxiv.org/pdf/2212.06950v2,arXiv:2212.06950v2
+25,Representation and Bias in Multilingual NLP: Insights from Controlled Experiments on Conditional Language Modeling,10.18653/v1/2021.repl4nlp-1.4,https://aclanthology.org/2021.repl4nlp-1.4.pdf,Unpaywall
+26,Closed Boundary Learning for NLP Classification Tasks with the Universum Class,10.18653/v1/2023.findings-emnlp.1038,https://aclanthology.org/2023.findings-emnlp.1038.pdf,Unpaywall
+27,Improving Language Model Pretraining with Text Structure Information,10.18653/v1/2025.babylm-main.1,https://aclanthology.org/2025.babylm-main.1.pdf,Unpaywall
+28,Unsupervised Neural Machine Translation with Generative Language Models Only,,https://arxiv.org/pdf/2110.05448v1,arXiv:2110.05448v1
+29,Leveraging Large Language Models for Multiple Choice Question Answering,,https://arxiv.org/pdf/2210.12353v3,arXiv:2210.12353v3
+30,Pretrained Language Model in Continual Learning: A Comparative Study,10.2196/preprints.34834,,
+31,One Question Answering Model for Many Languages with Cross-lingual Dense Passage Retrieval,,https://arxiv.org/pdf/2107.11976v2,arXiv:2107.11976v2
+32,Exploring extreme parameter compression for pre-trained language models,,https://arxiv.org/pdf/2205.10036v1,arXiv:2205.10036v1
+33,How Should Pre-Trained Language Models Be Fine-Tuned Towards Adversarial Robustness?,,https://arxiv.org/pdf/2112.11668v1,arXiv:2112.11668v1
+34,On Robust Prefix-Tuning for Text Classification,,https://arxiv.org/pdf/2203.10378v1,arXiv:2203.10378v1
+35,Forgetful causal masking makes causal language models better zero-shot learners,10.18653/v1/2023.acl-long.128,https://aclanthology.org/2023.acl-long.128.pdf,Unpaywall
+36,LFPT5: A Unified Framework for Lifelong Few-shot Language Learning Based on Prompt Tuning of T5,,https://arxiv.org/pdf/2110.07298v3,arXiv:2110.07298v3
+37,Data-Efficient Finetuning Using Cross-Task Nearest Neighbors,,https://arxiv.org/pdf/2212.00196v2,arXiv:2212.00196v2
+38,No Parameters Left Behind: Sensitivity Guided Adaptive Learning Rate for Training Large Transformer Models,,https://arxiv.org/pdf/2202.02664v2,arXiv:2202.02664v2
+39,How (Un)Fair is Text Summarization?,10.20944/preprints202501.2321.v1,https://www.preprints.org/frontend/manuscript/3dddd28c17737a55bfb33e767c50968c/download_pub,Unpaywall
+40,Teaching Algorithmic Reasoning via In-context Learning,,https://arxiv.org/pdf/2211.09066v1,arXiv:2211.09066v1
+41,Towards a Unified View of Parameter-Efficient Transfer Learning,,https://arxiv.org/pdf/2110.04366v3,arXiv:2110.04366v3
+42,Charformer: Fast Character Transformers via Gradient-based Subword Tokenization,,https://arxiv.org/pdf/2106.12672v3,arXiv:2106.12672v3
+43,Pretrain Knowledge-Aware Language Models,10.18653/v1/2020.findings-emnlp.25,https://www.aclweb.org/anthology/2020.findings-emnlp.25.pdf,Unpaywall
+44,Contextual Temperature for Language Modeling,,https://arxiv.org/pdf/2012.13575v1,arXiv:2012.13575v1
+45,Large Language Models Can Self-improve,,https://arxiv.org/pdf/2210.11610v2,arXiv:2210.11610v2
+46,Transcormer: Transformer for Sentence Scoring with Sliding Language Modeling,,https://arxiv.org/pdf/2205.12986v4,arXiv:2205.12986v4
+47,SpanDrop: Simple and Effective Counterfactual Learning for Long Sequences,,https://arxiv.org/pdf/2208.02169v1,arXiv:2208.02169v1
+48,Leveraging Automated Unit Tests for Unsupervised Code Translation,,https://arxiv.org/pdf/2110.06773v2,arXiv:2110.06773v2
+49,P-Adapters: Robustly Extracting Factual Information from Language Models with Diverse Prompts,,https://arxiv.org/pdf/2110.07280v2,arXiv:2110.07280v2
+50,Finetuned Language Models are Zero-Shot Learners,,https://arxiv.org/pdf/2109.01652v5,arXiv:2109.01652v5
+51,"Same Pre-training Loss, Better Downstream: Implicit Bias Matters for Language Models",,https://arxiv.org/pdf/2210.14199v1,arXiv:2210.14199v1
+52,"Generate, Annotate, and Learn: Generative Models Advance Self-Training and Knowledge Distillation",10.14711/thesis-hdl151306,,
+53,ULF: UNSUPERVISED LABELING FUNCTION CORRECTION USING CROSS-VALIDATION FOR WEAK SUPERVISION,,https://arxiv.org/pdf/2204.06863v4,arXiv:2204.06863v4
+54,Pre-Trained Language Models for Interactive Decision-Making,,https://arxiv.org/pdf/2202.01771v4,arXiv:2202.01771v4
+55,"Think Big, Teach Small: Do Language Models Distil Occam’s Razor?",10.1007/978-0-387-68222-8_35,,
+56,Human-Guided Fair Classification for Natural Language Processing,,https://arxiv.org/pdf/2212.10154v2,arXiv:2212.10154v2
+57,CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis,,https://arxiv.org/pdf/2203.13474v5,arXiv:2203.13474v5
+58,Recursion of Thought: Divide and Conquer Reasoning with Language Models,10.18653/v1/2023.findings-acl.40,https://aclanthology.org/2023.findings-acl.40.pdf,Unpaywall
+59,BertNet: Harvesting Knowledge Graphs from Pretrained Language Models,10.18653/v1/2023.findings-acl.309,https://aclanthology.org/2023.findings-acl.309.pdf,Unpaywall
+60,ExT5: Towards Extreme Multi-Task Scaling for Transfer Learning,,https://arxiv.org/pdf/2111.10952v2,arXiv:2111.10952v2
+61,Thrust: Adaptively Propels Large Language Models with External Knowledge,,https://arxiv.org/pdf/2307.10442v2,arXiv:2307.10442v2
+62,Large Language Models are Human-Level Prompt Engineers,,https://arxiv.org/pdf/2211.01910v2,arXiv:2211.01910v2
+63,Multitask Prompted Training Enables Zero-Shot Task Generalization,,https://arxiv.org/pdf/2110.08207v3,arXiv:2110.08207v3
+64,Quantifying Exposure Bias for Open-ended Language Generation,10.18653/v1/2022.gebnlp-1.9,https://aclanthology.org/2022.gebnlp-1.9.pdf,Unpaywall
+65,Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners,,https://arxiv.org/pdf/2108.13161v7,arXiv:2108.13161v7
+66,Self-Consistency Improves Chain of Thought Reasoning in Language Models,,https://arxiv.org/pdf/2203.11171v4,arXiv:2203.11171v4
+67,Cramming: Training a language model on a single GPU in one day,,https://arxiv.org/pdf/2212.14034v1,arXiv:2212.14034v1
+68,Mind the Gap: Assessing Temporal Generalization in Neural Language Models,,https://arxiv.org/pdf/2102.01951v2,arXiv:2102.01951v2
+69,Overthinking the Truth: Understanding how Language Models process False Demonstrations,,https://arxiv.org/pdf/2307.09476v3,arXiv:2307.09476v3
+70,Grad2Task: Improved Few-shot Text Classification Using Gradients for Task Representation,,https://arxiv.org/pdf/2201.11576v1,arXiv:2201.11576v1
+71,Bidirectional Language Models Are Also Few-shot Learners,,https://arxiv.org/pdf/2209.14500v2,arXiv:2209.14500v2
+72,LoRA: Low-Rank Adaptation of Large Language Models,,https://arxiv.org/pdf/2106.09685v2,arXiv:2106.09685v2
+73,Knowledge Unlearning for Mitigating Privacy Risks in Language Models,,https://arxiv.org/pdf/2210.01504v2,arXiv:2210.01504v2
+74,Mapping Language Models to Grounded Conceptual Spaces,10.1007/978-1-4614-3064-3_7,,
+75,COCO-LM: Correcting and Contrasting Text Sequences for Language Model Pretraining,,https://arxiv.org/pdf/2102.08473v2,arXiv:2102.08473v2
+76,Capturing Structural Locality in Non-parametric Language Models,,https://arxiv.org/pdf/2110.02870v3,arXiv:2110.02870v3
+77,Differentially Private Fine-tuning of Language Models,,https://arxiv.org/pdf/2110.06500v2,arXiv:2110.06500v2
+78,Autoregressive Entity Retrieval,,https://arxiv.org/pdf/2010.00904v3,arXiv:2010.00904v3
+79,Explaining Patterns in Data with Language Models via Interpretable Autoprompting,,https://arxiv.org/pdf/2210.01848v2,arXiv:2210.01848v2
+80,Using Document Similarity Methods to create Parallel Datasets for Code Translation,,https://arxiv.org/pdf/2110.05423v1,arXiv:2110.05423v1
+81,Internet-augmented language models through few-shot prompting for open-domain question answering,,https://arxiv.org/pdf/2203.05115v2,arXiv:2203.05115v2
+82,Towards Continual Knowledge Learning of Language Models,,https://arxiv.org/pdf/2110.03215v4,arXiv:2110.03215v4
+83,Deepening Hidden Representations from Pre-trained Language Models,,https://arxiv.org/pdf/1911.01940v2,arXiv:1911.01940v2
+84,Out-of-Distribution Detection and Selective Generation for Conditional Language Models,,https://arxiv.org/pdf/2209.15558v2,arXiv:2209.15558v2
+85,Meta-Weighted Language Model Tuning for Augmentation-Enhanced Few-Shot Learning,10.14711/thesis-991013340459503412,,
+86,Knowledge-in-Context: Towards Knowledgeable Semi-Parametric Language Models,,https://arxiv.org/pdf/2210.16433v3,arXiv:2210.16433v3
+87,Interactively Generating Explanations for Transformer Language Models,10.3233/faia220218,https://ebooks.iospress.nl/pdf/doi/10.3233/FAIA220218,Unpaywall
+88,Large language models are not zero-shot communicators,10.14711/thesis-991013223046403412,,
+89,SaMoE: Parameter Efficient MoE Language Models via Self-Adaptive Expert Combination,10.1021/acs.jmedchem.5c03511.s001,,
+90,Recitation-Augmented Language Models,,https://arxiv.org/pdf/2210.01296v2,arXiv:2210.01296v2
+91,Language models are multilingual chain-of-thought reasoners,,https://arxiv.org/pdf/2210.03057v1,arXiv:2210.03057v1
+92,Memorizing Transformers,,https://arxiv.org/pdf/2203.08913v1,arXiv:2203.08913v1
+93,FLEX: Unifying Evaluation for Few-Shot NLP,,https://arxiv.org/pdf/2107.07170v2,arXiv:2107.07170v2
+94,Ensembles and Cocktails: Robust Finetuning for Natural Language Generation,10.18653/v1/2024.inlg-main.34,https://aclanthology.org/2024.inlg-main.34.pdf,Unpaywall
+95,Debiasing Pretrained Text Encoders by Paying Attention to Paying Attention,10.18653/v1/2022.emnlp-main.651,https://aclanthology.org/2022.emnlp-main.651.pdf,Unpaywall
+96,Selective Annotation Makes Language Models Better Few-Shot Learners,,https://arxiv.org/pdf/2209.01975v1,arXiv:2209.01975v1
+97,The Inductive Bias of In-Context Learning: Rethinking Pretraining Example Design,,https://arxiv.org/pdf/2110.04541v3,arXiv:2110.04541v3
+98,Examining Scaling and Transfer of Language Model Architectures for Machine Translation,,https://arxiv.org/pdf/2202.00528v3,arXiv:2202.00528v3
+99,Does Entity Abstraction Help Generative Transformers Reason?,,https://arxiv.org/pdf/2201.01787v2,arXiv:2201.01787v2
+100,Words are all you need? Language as an approximation for human similarity judgments,,https://arxiv.org/pdf/2206.04105v3,arXiv:2206.04105v3
