@@ -1,0 +1,91 @@
+{
+  "name": "Paper Critique Multi-Agent Pipeline",
+  "nodes": [
+    {
+      "id": "a1b2c3d4-0001-0001-0001-000000000001",
+      "name": "Receive Paper",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "paper-critique",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "a1b2c3d4-0002-0002-0002-000000000002",
+      "name": "Reader Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 300],
+      "parameters": {
+        "jsCode": "const paper = $input.item.json;\nconst apiKey = $env.OPENROUTER_API_KEY;\n\nconst data = await this.helpers.request({\n  method: 'POST',\n  uri: 'https://openrouter.ai/api/v1/chat/completions',\n  headers: { 'Authorization': 'Bearer ' + apiKey },\n  body: {\n    model: 'google/gemini-flash-1.5',\n    max_tokens: 4096,\n    messages: [\n      { role: 'system', content: 'You are a careful academic reader. When given a paper, produce a structured summary with these clearly labelled sections:\\n\\n## Problem & Motivation\\n## Proposed Method\\n## Methods\\n## Results\\n## Claimed Contributions\\n\\nBe factual and concise. Include specific numbers from experiments.' },\n      { role: 'user', content: 'Please summarise the following paper:\\n\\nTitle: ' + paper.title + '\\n\\n' + paper.paper_text }\n    ]\n  },\n  json: true\n});\n\nconst summary = data.choices[0].message.content;\n\nreturn [{ json: { paper_id: paper.paper_id, title: paper.title, paper_text: paper.paper_text, reader_summary: summary } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0003-0003-0003-000000000003",
+      "name": "Critic Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 300],
+      "parameters": {
+        "jsCode": "const ctx = $input.item.json;\nconst apiKey = $env.OPENROUTER_API_KEY;\n\nconst data = await this.helpers.request({\n  method: 'POST',\n  uri: 'https://openrouter.ai/api/v1/chat/completions',\n  headers: { 'Authorization': 'Bearer ' + apiKey },\n  body: {\n    model: 'google/gemini-pro-1.5',\n    max_tokens: 4096,\n    messages: [\n      { role: 'system', content: 'You are a rigorous peer reviewer for a top-tier ML/AI venue. Given a paper summary, identify substantive weaknesses in: novelty, methodology, evaluation, clarity, and reproducibility. For each point give: (a) the issue, (b) why it matters, (c) what evidence from the paper supports your concern. Be specific and actionable.' },\n      { role: 'user', content: 'Here is the paper summary:\\n\\n' + ctx.reader_summary + '\\n\\nNow list your critique points.' }\n    ]\n  },\n  json: true\n});\n\nconst critique = data.choices[0].message.content;\n\nreturn [{ json: { ...ctx, critic_points: critique } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0004-0004-0004-000000000004",
+      "name": "Auditor Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [960, 300],
+      "parameters": {
+        "jsCode": "const ctx = $input.item.json;\nconst apiKey = $env.OPENROUTER_API_KEY;\n\nconst data = await this.helpers.request({\n  method: 'POST',\n  uri: 'https://openrouter.ai/api/v1/chat/completions',\n  headers: { 'Authorization': 'Bearer ' + apiKey },\n  body: {\n    model: 'google/gemini-flash-1.5',\n    max_tokens: 4096,\n    messages: [\n      { role: 'system', content: 'You are a senior programme committee member auditing a peer review. Your job is to challenge poorly-supported critique points: ask for concrete evidence, flag over-interpretations, and identify any points that are actually addressed in the paper. Also highlight genuine issues the Critic may have missed. Be constructive but demanding.' },\n      { role: 'user', content: 'Paper summary:\\n' + ctx.reader_summary + '\\n\\nCritic points:\\n' + ctx.critic_points + '\\n\\nChallenge weak points and identify anything important that was missed.' }\n    ]\n  },\n  json: true\n});\n\nconst auditFeedback = data.choices[0].message.content;\n\nreturn [{ json: { ...ctx, auditor_feedback: auditFeedback } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0005-0005-0005-000000000005",
+      "name": "Summariser Agent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 300],
+      "parameters": {
+        "jsCode": "const ctx = $input.item.json;\nconst apiKey = $env.OPENROUTER_API_KEY;\n\nconst schema = '{\"summary\":\"<2-3 sentence summary>\",\"strengths\":[{\"point\":\"<strength>\",\"evidence\":\"<evidence>\"}],\"weaknesses\":[{\"point\":\"<weakness>\",\"evidence\":\"<evidence>\"}],\"questions\":[{\"question\":\"<question>\",\"motivation\":\"<why it matters>\"}],\"scores\":{\"correctness\":\"<1-5>\",\"novelty\":\"<1-5>\",\"recommendation\":\"<accept|borderline|reject>\",\"confidence\":\"<1-5>\"}}';\n\nconst transcript = '=== Reader ===\\n' + ctx.reader_summary + '\\n\\n=== Critic ===\\n' + ctx.critic_points + '\\n\\n=== Auditor ===\\n' + ctx.auditor_feedback;\n\nconst data = await this.helpers.request({\n  method: 'POST',\n  uri: 'https://openrouter.ai/api/v1/chat/completions',\n  headers: { 'Authorization': 'Bearer ' + apiKey },\n  body: {\n    model: 'google/gemini-pro-1.5',\n    max_tokens: 4096,\n    messages: [\n      { role: 'system', content: 'You are a senior editor. Synthesise the debate into a final structured review. Output ONLY valid JSON matching this schema: ' + schema + ' Rules: 3-8 strengths, 3-8 weaknesses, 2-5 questions. No markdown fences, no commentary.' },\n      { role: 'user', content: 'Full debate transcript:\\n\\n' + transcript + '\\n\\nProduce the final structured review JSON.' }\n    ]\n  },\n  json: true\n});\n\nlet raw = data.choices[0].message.content.trim();\nif (raw.startsWith('```')) {\n  raw = raw.split('```')[1];\n  if (raw.startsWith('json')) raw = raw.slice(4);\n}\n\nlet structured;\ntry { structured = JSON.parse(raw); } catch(e) { structured = { raw: raw }; }\n\nreturn [{ json: { paper_id: ctx.paper_id, output: structured } }];"
+      }
+    },
+    {
+      "id": "a1b2c3d4-0006-0006-0006-000000000006",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1440, 300],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Receive Paper": {
+      "main": [[{"node": "Reader Agent", "type": "main", "index": 0}]]
+    },
+    "Reader Agent": {
+      "main": [[{"node": "Critic Agent", "type": "main", "index": 0}]]
+    },
+    "Critic Agent": {
+      "main": [[{"node": "Auditor Agent", "type": "main", "index": 0}]]
+    },
+    "Auditor Agent": {
+      "main": [[{"node": "Summariser Agent", "type": "main", "index": 0}]]
+    },
+    "Summariser Agent": {
+      "main": [[{"node": "Respond to Webhook", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false,
+  "settings": { "executionOrder": "v1" },
+  "meta": { "templateCredsSetupCompleted": true },
+  "tags": []
+}
