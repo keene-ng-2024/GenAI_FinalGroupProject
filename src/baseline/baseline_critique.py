@@ -164,8 +164,8 @@ def critique_paper(
         model=model,
         max_tokens=cfg["max_tokens"],
         temperature=cfg["temperature"],
-        system=SYSTEM_PROMPT,
         messages=[
+            {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": format_user_message(
                 title, abstract, full_text, truncate_chars=truncate_chars)}
         ],
@@ -180,8 +180,8 @@ def critique_paper(
         "model": model,
         "latency_seconds": latency,
         "token_usage": {
-            "input": response.usage.input_tokens,
-            "output": response.usage.output_tokens,
+            "input": response.usage.prompt_tokens,
+            "output": response.usage.completion_tokens,
         },
         "structured": structured,
         "critique_points": _flatten_to_critique_points(structured),
