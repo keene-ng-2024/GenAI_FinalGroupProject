@@ -35,10 +35,10 @@ agent:
     - "well-supported"
     - "approve"
   model_map:
-    reader: "claude-haiku-4-5-20251001"     # cheap — just reads and summarises
-    critic: "claude-sonnet-4-6"             # main reasoning
-    auditor: "claude-haiku-4-5-20251001"    # cheaper challenger
-    summariser: "claude-sonnet-4-6"         # output quality matters
+    reader: "gpt-4o"     # OpenAI 4o for reading
+    critic: "gpt-4o"     # OpenAI 4o for critique
+    auditor: "gpt-4o"    # OpenAI 4o for auditing
+    summariser: "gpt-4o" # OpenAI 4o for summarization
   roles:
     - Reader
     - Critic
@@ -83,21 +83,3 @@ results:
   baseline_dir: "results/baseline"
   agents_dir: "results/agents"
   vertexai_dir: "results/vertexai"
-
-# ── Vertex AI Configuration ────────────────────────────────────────────────────
-vertex_ai:
-  project: "genai-vertexai-492302"
-  location: "asia-southeast1"
-  models:
-    reader: "gemini-1.5-flash"
-    critic: "gemini-1.5-pro"
-    auditor: "gemini-1.5-flash"
-    summarizer: "gemini-1.5-pro"
-  grounding_verifier:
-    model: "gemini-1.5-flash"
-    max_tokens: 2048
-    early_stop_phrases:
-      - "no further concerns"
-      - "i am satisfied"
-      - "well-supported"
-      - "approve"
