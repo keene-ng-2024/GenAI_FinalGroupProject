@@ -126,8 +126,8 @@
 
 ### 6.1 Efficacy Metrics
 
-- [ ] 6.1.1 Run evaluation on dev_split.jsonl (5 papers) using existing scorer.py (IR-4.2.1)
-- [ ] 6.1.2 Compare multi-agent vs baseline coverage (IR-4.2.1)
+- [x] 6.1.1 Run evaluation on dev_split.jsonl (5 papers) using existing scorer.py (IR-4.2.1)
+- [x] 6.1.2 Compare multi-agent vs baseline coverage (IR-4.2.1)
 - [ ] 6.1.3 Compare multi-agent vs baseline specificity (IR-4.2.2)
 - [ ] 6.1.4 Compare multi-agent vs baseline grounding (IR-4.2.2)
 - [ ] 6.1.5 Compare multi-agent vs baseline latency (NFR-2.1.1, NFR-2.1.2)

@@ -23,6 +23,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/reviews_parsed.json
 !data/processed/critique_dicts/.gitkeep
+./hypothesis
+.hypothesis/
 
 # Results (large generated files)
 results/baseline/*.json
