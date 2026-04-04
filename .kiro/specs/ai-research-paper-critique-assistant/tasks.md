@@ -20,26 +20,26 @@
 
 ### 1.3 Configuration
 
-- [ ] 1.3.1 Update `config.yaml` with Vertex AI model mappings (models.vertex_fast, models.vertex_pro) (FR-1.1.4)
-- [ ] 1.3.2 Add `agent.vertex_ai` section with project and location configuration (IR-4.1.1)
-- [ ] 1.3.3 Add `grounding_verifier` section with settings (model, max_tokens, early_stop_phrases) (FR-1.4.1)
-- [ ] 1.3.4 Add `output` section with results_dir and metadata_file configuration (FR-1.6.1, FR-1.6.2)
-- [ ] 1.3.5 Add `cost_control` section with max_tokens_per_paper and rate_limit settings (NFR-2.1.3)
+- [x] 1.3.1 Update `config.yaml` with Vertex AI model mappings (models.vertex_fast, models.vertex_pro) (FR-1.1.4)
+- [x] 1.3.2 Add `agent.vertex_ai` section with project and location configuration (IR-4.1.1)
+- [x] 1.3.3 Add `grounding_verifier` section with settings (model, max_tokens, early_stop_phrases) (FR-1.4.1)
+- [x] 1.3.4 Add `output` section with results_dir and metadata_file configuration (FR-1.6.1, FR-1.6.2)
+- [x] 1.3.5 Add `cost_control` section with max_tokens_per_paper and rate_limit settings (NFR-2.1.3)
 
 ## Phase 2: Grounding Verification
 
 ### 2.1 Grounding Verifier Implementation
 
-- [ ] 2.1.1 Create `src/agents/grounding_verifier.py` with `verify_grounding()` function (FR-1.4.1, FR-1.4.2)
-- [ ] 2.1.2 Implement `verify_grounding(critique_point, paper_section, config)` returning is_supported, confidence, evidence_match_score (FR-1.4.4)
-- [ ] 2.1.3 Implement `verify_all_grounding(critique_text, paper, config)` for batch verification (FR-1.4.5)
-- [ ] 2.1.4 Add grounding score calculation with LLM sub-call using Gemini 1.5 Flash (NFR-2.1.3)
-- [ ] 2.1.5 Implement early stopping detection with negation handling (FR-1.3.5)
+- [x] 2.1.1 Create `src/agents/grounding_verifier.py` with `verify_grounding()` function (FR-1.4.1, FR-1.4.2)
+- [x] 2.1.2 Implement `verify_grounding(critique_point, paper_section, config)` returning is_supported, confidence, evidence_match_score (FR-1.4.4)
+- [x] 2.1.3 Implement `verify_all_grounding(critique_text, paper, config)` for batch verification (FR-1.4.5)
+- [x] 2.1.4 Add grounding score calculation with LLM sub-call using Gemini 1.5 Flash (NFR-2.1.3)
+- [x] 2.1.5 Implement early stopping detection with negation handling (FR-1.3.5)
 
 ### 2.2 Vertex AI Integration
 
 - [ ] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
-- [ ] 2.2.2 Create `src/agents/vertex_client.py` with `get_vertex_ai_client()` function (IR-4.1.1)
+- [x] 2.2.2 Create `src/agents/vertex_client.py` with `get_vertex_ai_client()` function (IR-4.1.1)
 - [ ] 2.2.3 Implement `generate_content()` method with structured output support (FR-1.5.1)
 - [ ] 2.2.4 Add retry logic with exponential backoff for 429 errors (NFR-2.2.1)
 - [ ] 2.2.5 Add rate limiting and circuit breaker for API calls (NFR-2.2.1, C-5.2.2)
