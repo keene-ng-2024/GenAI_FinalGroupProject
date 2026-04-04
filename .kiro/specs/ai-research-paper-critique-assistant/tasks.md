@@ -40,16 +40,16 @@
 
 - [ ] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
 - [x] 2.2.2 Create `src/agents/vertex_client.py` with `get_vertex_ai_client()` function (IR-4.1.1)
-- [ ] 2.2.3 Implement `generate_content()` method with structured output support (FR-1.5.1)
-- [ ] 2.2.4 Add retry logic with exponential backoff for 429 errors (NFR-2.2.1)
-- [ ] 2.2.5 Add rate limiting and circuit breaker for API calls (NFR-2.2.1, C-5.2.2)
+- [x] 2.2.3 Implement `generate_content()` method with structured output support (FR-1.5.1)
+- [x] 2.2.4 Add retry logic with exponential backoff for 429 errors (NFR-2.2.1)
+- [x] 2.2.5 Add rate limiting and circuit breaker for API calls (NFR-2.2.1, C-5.2.2)
 
 ## Phase 3: Orchestration
 
 ### 3.1 Main Orchestrator
 
 - [x] 3.1.1 Create `src/agents/state.py` with `AgentState` TypedDict and state management (FR-1.1.2)
-- [ ] 3.1.2 Implement `run_pipeline(paper_id, paper_text)` function as main entry point (IR-4.3.1)
+- [-] 3.1.2 Implement `run_pipeline(paper_id, paper_text)` function as main entry point (IR-4.3.1)
 - [ ] 3.1.3 Implement iterative debate loop with configurable max_rounds=5 (FR-1.3.2)
 - [ ] 3.1.4 Implement early stopping detection with configurable phrases (FR-1.3.3, FR-1.3.4)
 - [ ] 3.1.5 Integrate grounding verification into debate loop (FR-1.4.3)
