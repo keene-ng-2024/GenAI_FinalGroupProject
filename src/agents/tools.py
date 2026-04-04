@@ -18,18 +18,24 @@ from __future__ import annotations
 import os
 import re
 
-import anthropic
+from openai import OpenAI
 from dotenv import load_dotenv
+
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 load_dotenv()
 
-_client: anthropic.Anthropic | None = None
+_client: OpenAI | None = None
 
 
-def _get_client() -> anthropic.Anthropic:
+def _get_client() -> OpenAI:
     global _client
     if _client is None:
-        _client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        _client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     return _client
 
 
@@ -38,8 +44,8 @@ def _get_client() -> anthropic.Anthropic:
 def summarise_section(text: str, max_sentences: int = 3) -> str:
     """Return a concise summary of the provided text."""
     client = _get_client()
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+    response = client.chat.completions.create(
+        model="gpt-4o",
         max_tokens=256,
         messages=[
             {
@@ -50,14 +56,14 @@ def summarise_section(text: str, max_sentences: int = 3) -> str:
             }
         ],
     )
-    return response.content[0].text.strip()
+    return response.choices[0].message.content.strip()
 
 
 def extract_claims(text: str) -> list[str]:
     """Extract a bullet list of empirical claims from text."""
     client = _get_client()
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+    response = client.chat.completions.create(
+        model="gpt-4o",
         max_tokens=512,
         messages=[
             {
@@ -69,7 +75,7 @@ def extract_claims(text: str) -> list[str]:
             }
         ],
     )
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
     return [line.lstrip("- ").strip() for line in raw.splitlines() if line.strip()]
 
 
@@ -101,12 +107,12 @@ def flag_missing_baselines(methods_section: str, results_section: str) -> list[s
         "List any baselines or comparisons mentioned in the methods that are "
         "missing from the results. One per line, prefixed with '- '."
     )
-    response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+    response = client.chat.completions.create(
+        model="gpt-4o",
         max_tokens=256,
         messages=[{"role": "user", "content": prompt}],
     )
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
     return [line.lstrip("- ").strip() for line in raw.splitlines() if line.strip()]
 
 
@@ -131,57 +137,3 @@ def call_tool(name: str, **kwargs) -> str:
         return str(result)
     except Exception as exc:
         return f"[ERROR] Tool '{name}' raised: {exc}"
-
-
-# ── Anthropic tool-use schema ──────────────────────────────────────────────────
-# Passed to client.messages.create(tools=TOOL_SCHEMAS) when using tool_use.
-
-TOOL_SCHEMAS = [
-    {
-        "name": "summarise_section",
-        "description": "Summarise a section of text in a few sentences.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "text": {"type": "string", "description": "Text to summarise."},
-                "max_sentences": {"type": "integer", "default": 3},
-            },
-            "required": ["text"],
-        },
-    },
-    {
-        "name": "extract_claims",
-        "description": "Extract empirical claims from a passage.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "text": {"type": "string", "description": "Passage to analyse."}
-            },
-            "required": ["text"],
-        },
-    },
-    {
-        "name": "check_citation",
-        "description": "Check whether a claim is cited in the bibliography.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "claim": {"type": "string"},
-                "bibliography": {"type": "string"},
-            },
-            "required": ["claim", "bibliography"],
-        },
-    },
-    {
-        "name": "flag_missing_baselines",
-        "description": "Find baselines in methods that are absent from results.",
-        "input_schema": {
-            "type": "object",
-            "properties": {
-                "methods_section": {"type": "string"},
-                "results_section": {"type": "string"},
-            },
-            "required": ["methods_section", "results_section"],
-        },
-    },
-]

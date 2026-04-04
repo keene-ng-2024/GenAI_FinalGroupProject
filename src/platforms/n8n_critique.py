@@ -26,6 +26,9 @@ Setup
   3. Set n8n.webhook_url in config.yaml.
 
 Output per paper: results/n8n/<paper_id>.json  (same schema as baseline)
+
+Note: This is an alternative platform option. The primary implementation
+uses OpenAI (gpt-4o) directly via src/agents/orchestrator.py.
 """
 
 from __future__ import annotations

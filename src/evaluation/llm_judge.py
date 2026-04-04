@@ -14,19 +14,19 @@ import os
 from pathlib import Path
 from typing import Any
 
-import anthropic
+from openai import OpenAI
 import yaml
 from dotenv import load_dotenv
 
 load_dotenv()
 
-_client: anthropic.Anthropic | None = None
+_client: OpenAI | None = None
 
 
-def _get_client() -> anthropic.Anthropic:
+def _get_client() -> OpenAI:
     global _client
     if _client is None:
-        _client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        _client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     return _client
 
 
@@ -113,21 +113,20 @@ def judge_paper(
         gen_block = "\n".join(f"- {v}" for v in cp.values()) if cp else "(no generated points)"
 
     client = _get_client()
-    response = client.messages.create(
+    response = client.chat.completions.create(
         model=cfg["models"]["fast"],
         max_tokens=512,
         temperature=0.0,
-        system=JUDGE_SYSTEM,
-        messages=[{
-            "role": "user",
-            "content": JUDGE_USER.format(
+        messages=[
+            {"role": "system", "content": JUDGE_SYSTEM},
+            {"role": "user", "content": JUDGE_USER.format(
                 ground_truth_block=gt_block,
                 generated_block=gen_block,
-            ),
-        }],
+            )},
+        ],
     )
 
-    raw = response.content[0].text.strip()
+    raw = response.choices[0].message.content.strip()
 
     # Parse JSON response
     try:

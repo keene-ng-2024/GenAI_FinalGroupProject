@@ -10,9 +10,7 @@ Roles
   Summariser – consolidates the debate into a final structured review
 
 Each agent is a dataclass holding its system prompt and a method to
-generate a response given a conversation history.  Agents that have
-use_tools=True will dispatch tool calls via the Anthropic tool-use API
-and loop until the model returns a final text response.
+generate a response given a conversation history.
 """
 
 from __future__ import annotations
@@ -20,7 +18,7 @@ from __future__ import annotations
 import os
 from dataclasses import dataclass, field
 
-import anthropic
+from openai import OpenAI
 from dotenv import load_dotenv
 
 import sys
@@ -36,13 +34,13 @@ load_dotenv()
 
 # ── Shared client ──────────────────────────────────────────────────────────────
 
-_client: anthropic.Anthropic | None = None
+_client: OpenAI | None = None
 
 
-def _get_client() -> anthropic.Anthropic:
+def _get_client() -> OpenAI:
     global _client
     if _client is None:
-        _client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
+        _client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
     return _client
 
 
@@ -52,7 +50,7 @@ def _get_client() -> anthropic.Anthropic:
 class BaseAgent:
     name: str
     system_prompt: str
-    model: str = "claude-sonnet-4-6"
+    model: str = "gpt-4o"
     max_tokens: int = 4096
     temperature: float = 0.2
     use_tools: bool = False
@@ -64,62 +62,29 @@ class BaseAgent:
     total_output_tokens: int = 0
 
     def chat(self, user_message: str) -> str:
-        """Send a message and get a reply, updating internal history.
-
-        If use_tools is True and the model requests tool calls, this method
-        dispatches them via call_tool() and loops until the model produces a
-        final text response (or max_tool_calls is reached).
-        """
+        """Send a message and get a reply, updating internal history."""
         self.history.append({"role": "user", "content": user_message})
         client = _get_client()
 
-        tool_calls_remaining = self.max_tool_calls
+        response = client.chat.completions.create(
+            model=self.model,
+            max_tokens=self.max_tokens,
+            temperature=self.temperature,
+            messages=[
+                {"role": "system", "content": self.system_prompt},
+                *self.history,
+            ],
+        )
 
-        while True:
-            api_kwargs: dict = dict(
-                model=self.model,
-                max_tokens=self.max_tokens,
-                temperature=self.temperature,
-                system=self.system_prompt,
-                messages=self.history,
-            )
-            if self.use_tools and tool_calls_remaining > 0:
-                api_kwargs["tools"] = TOOL_SCHEMAS
+        # Track token usage
+        self.total_input_tokens += response.usage.prompt_tokens
+        self.total_output_tokens += response.usage.completion_tokens
 
-            response = client.messages.create(**api_kwargs)
+        # Extract text from the final response
+        reply = response.choices[0].message.content.strip()
 
-            # Track token usage
-            self.total_input_tokens += response.usage.input_tokens
-            self.total_output_tokens += response.usage.output_tokens
-
-            # If the model wants to call tools, dispatch and loop
-            if response.stop_reason == "tool_use" and tool_calls_remaining > 0:
-                self.history.append({"role": "assistant", "content": response.content})
-
-                tool_results = []
-                for block in response.content:
-                    if block.type == "tool_use":
-                        result = call_tool(block.name, **block.input)
-                        tool_results.append({
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
-                            "content": result,
-                        })
-                        tool_calls_remaining -= 1
-
-                self.history.append({"role": "user", "content": tool_results})
-                continue
-
-            # Extract text from the final response
-            text_parts = [b.text for b in response.content if hasattr(b, "text")]
-            reply = "\n".join(text_parts).strip()
-
-            if not reply and response.stop_reason == "tool_use":
-                reply = "[Agent hit tool call limit without producing a text response]"
-                print(f"  [WARN] {self.name} exhausted tool calls without final text.")
-
-            self.history.append({"role": "assistant", "content": reply})
-            return reply
+        self.history.append({"role": "assistant", "content": reply})
+        return reply
 
     def reset(self) -> None:
         self.history.clear()
@@ -136,7 +101,7 @@ class BaseAgent:
 class ReaderAgent(BaseAgent):
     """Reads the paper and produces a structured summary with labelled sections."""
 
-    def __init__(self, model: str = "claude-sonnet-4-6", **kwargs):
+    def __init__(self, model: str = "gpt-4o", **kwargs):
         super().__init__(
             name="Reader",
             system_prompt=(
@@ -161,7 +126,7 @@ class ReaderAgent(BaseAgent):
 class CriticAgent(BaseAgent):
     """Generates critique points from a paper summary."""
 
-    def __init__(self, model: str = "claude-sonnet-4-6", use_tools: bool = False, **kwargs):
+    def __init__(self, model: str = "gpt-4o", use_tools: bool = False, **kwargs):
         tool_instructions = ""
         if use_tools:
             tool_instructions = (
@@ -202,7 +167,7 @@ class CriticAgent(BaseAgent):
 class AuditorAgent(BaseAgent):
     """Challenges the Critic's points and asks for evidence."""
 
-    def __init__(self, model: str = "claude-sonnet-4-6", use_tools: bool = False, **kwargs):
+    def __init__(self, model: str = "gpt-4o", use_tools: bool = False, **kwargs):
         tool_instructions = ""
         if use_tools:
             tool_instructions = (
@@ -258,7 +223,7 @@ STRUCTURED_OUTPUT_SCHEMA = """\
 class SummariserAgent(BaseAgent):
     """Consolidates the debate into a final structured review JSON."""
 
-    def __init__(self, model: str = "claude-sonnet-4-6", **kwargs):
+    def __init__(self, model: str = "gpt-4o", **kwargs):
         super().__init__(
             name="Summariser",
             max_tokens=4096,
