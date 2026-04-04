@@ -23,7 +23,13 @@ from dataclasses import dataclass, field
 import anthropic
 from dotenv import load_dotenv
 
-from src.agents.tools import TOOL_SCHEMAS, call_tool
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from agents.tools import TOOL_SCHEMAS, call_tool
 
 load_dotenv()
 

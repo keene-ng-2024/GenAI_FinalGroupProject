@@ -1,7 +1,7 @@
 # ── Model configuration ────────────────────────────────────────────────────────
 models:
-  strong: "gpt-4o"                  # used for agentic loop & critique-dict building
-  fast:   "gpt-4o"                  # used for cheap sub-calls (summarise, verify)
+  strong: "claude-sonnet-4-6"       # used for agentic loop & critique-dict building
+  fast:   "claude-haiku-4-5-20251001"  # used for cheap sub-calls (summarise, verify)
   baseline: "gpt-4o"                # OpenAI 4o baseline
 
 # ── Reproducibility ────────────────────────────────────────────────────────────
@@ -35,10 +35,10 @@ agent:
     - "well-supported"
     - "approve"
   model_map:
-    reader: "gpt-4o"     # OpenAI 4o for reading
-    critic: "gpt-4o"     # OpenAI 4o for critique
-    auditor: "gpt-4o"    # OpenAI 4o for auditing
-    summariser: "gpt-4o" # OpenAI 4o for summarization
+    reader: "claude-haiku-4-5-20251001"     # cheap — just reads and summarises
+    critic: "claude-sonnet-4-6"             # main reasoning
+    auditor: "claude-haiku-4-5-20251001"    # cheaper challenger
+    summariser: "claude-sonnet-4-6"         # output quality matters
   roles:
     - Reader
     - Critic
