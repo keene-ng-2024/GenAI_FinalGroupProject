@@ -1,0 +1,68 @@
+{
+  "paper_id": "paper_0049",
+  "model": "gpt-4o",
+  "latency_seconds": 8.37,
+  "token_usage": {
+    "input": 2940,
+    "output": 621
+  },
+  "structured": {
+    "summary": "The paper introduces P-Adapters, a method for improving the consistency and precision of factual information extraction from large language models (LLMs) by using continuous prompts derived from natural language inputs, without requiring additional annotations.",
+    "strengths": [
+      {
+        "point": "The paper addresses a significant issue with LLMs: the variability in responses due to different natural language prompts.",
+        "evidence": "Introduction and Abstract sections discuss the inconsistency in LLM responses to semantically equivalent prompts."
+      },
+      {
+        "point": "P-Adapters show substantial improvements in precision and consistency compared to using natural language prompts alone.",
+        "evidence": "Abstract and Results sections report 12-26% improvement in precision and 36-50% improvement in consistency."
+      },
+      {
+        "point": "The method does not require additional annotations, making it user-friendly and practical for real-world applications.",
+        "evidence": "The paper emphasizes that P-Adapters only require (prompt, object) pairs at training time, as mentioned in the Abstract and Methodology sections."
+      }
+    ],
+    "weaknesses": [
+      {
+        "point": "The paper lacks a detailed comparison with other state-of-the-art methods beyond MoE models.",
+        "evidence": "While MoE models are discussed, there is limited comparison with other recent advancements in the field."
+      },
+      {
+        "point": "The evaluation on out-of-distribution (OOD) settings is not exhaustive and could be expanded to include more diverse scenarios.",
+        "evidence": "The paper mentions three OOD settings but does not provide extensive results or analysis for each."
+      },
+      {
+        "point": "The dependency on the LLM's embeddings might limit the applicability of P-Adapters to only certain types of LLMs.",
+        "evidence": "The paper notes the importance of access to LLM embeddings, which might not be feasible for all models."
+      },
+      {
+        "point": "The paper does not address the potential computational overhead introduced by P-Adapters.",
+        "evidence": "There is no discussion on the computational cost or efficiency of implementing P-Adapters in practice."
+      }
+    ],
+    "questions": [
+      {
+        "question": "How do P-Adapters perform when integrated with newer LLM architectures beyond BERT and RoBERTa?",
+        "motivation": "Understanding the adaptability of P-Adapters to newer models is crucial for assessing their long-term relevance."
+      },
+      {
+        "question": "Can the authors provide more detailed results on the OOD evaluations, particularly regarding the types of typographical errors tested?",
+        "motivation": "Detailed OOD results would help in understanding the robustness of P-Adapters in real-world scenarios with noisy inputs."
+      }
+    ],
+    "scores": {
+      "correctness": "4",
+      "novelty": "3",
+      "recommendation": "weak accept",
+      "confidence": "4"
+    }
+  },
+  "critique_points": {
+    "point_001": "The paper lacks a detailed comparison with other state-of-the-art methods beyond MoE models. (While MoE models are discussed, there is limited comparison with other recent advancements in the field.)",
+    "point_002": "The evaluation on out-of-distribution (OOD) settings is not exhaustive and could be expanded to include more diverse scenarios. (The paper mentions three OOD settings but does not provide extensive results or analysis for each.)",
+    "point_003": "The dependency on the LLM's embeddings might limit the applicability of P-Adapters to only certain types of LLMs. (The paper notes the importance of access to LLM embeddings, which might not be feasible for all models.)",
+    "point_004": "The paper does not address the potential computational overhead introduced by P-Adapters. (There is no discussion on the computational cost or efficiency of implementing P-Adapters in practice.)",
+    "point_005": "How do P-Adapters perform when integrated with newer LLM architectures beyond BERT and RoBERTa? (Understanding the adaptability of P-Adapters to newer models is crucial for assessing their long-term relevance.)",
+    "point_006": "Can the authors provide more detailed results on the OOD evaluations, particularly regarding the types of typographical errors tested? (Detailed OOD results would help in understanding the robustness of P-Adapters in real-world scenarios with noisy inputs.)"
+  }
+}

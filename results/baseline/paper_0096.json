@@ -1,0 +1,82 @@
+{
+  "paper_id": "paper_0096",
+  "model": "gpt-4o",
+  "latency_seconds": 6.67,
+  "token_usage": {
+    "input": 2715,
+    "output": 590
+  },
+  "structured": {
+    "summary": "The paper introduces a two-step framework for improving few-shot learning in large language models through selective annotation and prompt retrieval, demonstrating significant performance gains with reduced annotation costs.",
+    "strengths": [
+      {
+        "point": "The paper proposes a novel two-step framework that effectively reduces annotation costs while maintaining high performance.",
+        "evidence": "Abstract, Introduction"
+      },
+      {
+        "point": "The vote-k method is shown to outperform random selection and other baselines significantly.",
+        "evidence": "Section 2.1, Experiments"
+      },
+      {
+        "point": "Extensive experiments across 10 datasets demonstrate the robustness and effectiveness of the proposed method.",
+        "evidence": "Abstract, Experiments"
+      },
+      {
+        "point": "The framework is versatile, showing consistent improvements across different model sizes and scenarios.",
+        "evidence": "Section 4.2, Section 4.3"
+      }
+    ],
+    "weaknesses": [
+      {
+        "point": "The paper lacks a detailed comparison with other state-of-the-art selective annotation methods.",
+        "evidence": "Section 4.5"
+      },
+      {
+        "point": "The impact of the choice of k and \u03c1 parameters in the vote-k method is not thoroughly explored.",
+        "evidence": "Section 2.1"
+      },
+      {
+        "point": "The paper does not provide a comprehensive analysis of the computational overhead introduced by the graph-based method.",
+        "evidence": "Section 2.1"
+      },
+      {
+        "point": "The method's performance under different types of domain shifts is not extensively analyzed.",
+        "evidence": "Section 4.3"
+      },
+      {
+        "point": "The paper could benefit from a more detailed discussion on the limitations and potential biases introduced by the selective annotation process.",
+        "evidence": "Discussion"
+      }
+    ],
+    "questions": [
+      {
+        "question": "How does the vote-k method compare to other graph-based methods in terms of computational efficiency?",
+        "motivation": "Understanding the computational trade-offs is crucial for practical applications."
+      },
+      {
+        "question": "What are the effects of varying the parameters k and \u03c1 on the performance of the vote-k method?",
+        "motivation": "Parameter sensitivity analysis is important for understanding the robustness of the method."
+      },
+      {
+        "question": "Can the framework be adapted to other types of models beyond large language models?",
+        "motivation": "Exploring the generalizability of the framework could expand its applicability."
+      }
+    ],
+    "scores": {
+      "correctness": "4",
+      "novelty": "4",
+      "recommendation": "weak accept",
+      "confidence": "4"
+    }
+  },
+  "critique_points": {
+    "point_001": "The paper lacks a detailed comparison with other state-of-the-art selective annotation methods. (Section 4.5)",
+    "point_002": "The impact of the choice of k and \u03c1 parameters in the vote-k method is not thoroughly explored. (Section 2.1)",
+    "point_003": "The paper does not provide a comprehensive analysis of the computational overhead introduced by the graph-based method. (Section 2.1)",
+    "point_004": "The method's performance under different types of domain shifts is not extensively analyzed. (Section 4.3)",
+    "point_005": "The paper could benefit from a more detailed discussion on the limitations and potential biases introduced by the selective annotation process. (Discussion)",
+    "point_006": "How does the vote-k method compare to other graph-based methods in terms of computational efficiency? (Understanding the computational trade-offs is crucial for practical applications.)",
+    "point_007": "What are the effects of varying the parameters k and \u03c1 on the performance of the vote-k method? (Parameter sensitivity analysis is important for understanding the robustness of the method.)",
+    "point_008": "Can the framework be adapted to other types of models beyond large language models? (Exploring the generalizability of the framework could expand its applicability.)"
+  }
+}

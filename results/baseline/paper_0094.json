@@ -1,0 +1,73 @@
+{
+  "paper_id": "paper_0094",
+  "model": "gpt-4o",
+  "latency_seconds": 6.082,
+  "token_usage": {
+    "input": 3043,
+    "output": 584
+  },
+  "structured": {
+    "summary": "The paper introduces two methods, ensembling and cocktail finetuning, to combine the strengths of full and lightweight finetuning for natural language generation, achieving robust performance both in-distribution (ID) and out-of-distribution (OOD).",
+    "strengths": [
+      {
+        "point": "The paper addresses a significant tradeoff in finetuning methods for natural language generation, providing a solution that combines the strengths of both full and lightweight finetuning.",
+        "evidence": "Abstract and Introduction"
+      },
+      {
+        "point": "The proposed methods are simple yet effective, leveraging well-known techniques like ensembling and distillation.",
+        "evidence": "Abstract and Related Work"
+      },
+      {
+        "point": "The paper provides theoretical insights into how distillation can transfer OOD behavior using only ID data.",
+        "evidence": "Abstract and Theoretical Study Section"
+      }
+    ],
+    "weaknesses": [
+      {
+        "point": "The paper lacks detailed experimental results and comparisons with other state-of-the-art methods.",
+        "evidence": "The abstract and introduction mention experiments but do not provide detailed results or comparisons."
+      },
+      {
+        "point": "The scalability of the proposed methods to very large models or datasets is not discussed.",
+        "evidence": "The paper does not mention any scalability analysis or experiments on large-scale datasets."
+      },
+      {
+        "point": "The paper does not provide a clear analysis of the computational overhead introduced by the ensemble method.",
+        "evidence": "While the paper proposes cocktail finetuning to avoid running two models, it does not quantify the computational cost of the ensemble approach."
+      },
+      {
+        "point": "The theoretical analysis is limited to a specific setting and may not generalize to all natural language generation tasks.",
+        "evidence": "Theoretical Study Section"
+      }
+    ],
+    "questions": [
+      {
+        "question": "Can the authors provide more detailed experimental results, including comparisons with other state-of-the-art methods?",
+        "motivation": "Detailed experimental results are crucial for assessing the practical effectiveness of the proposed methods."
+      },
+      {
+        "question": "How do the proposed methods scale with larger models and datasets?",
+        "motivation": "Understanding scalability is important for evaluating the applicability of the methods to real-world, large-scale scenarios."
+      },
+      {
+        "question": "What is the computational overhead of the ensemble method compared to full and lightweight finetuning individually?",
+        "motivation": "Quantifying computational costs is essential for practical deployment considerations."
+      }
+    ],
+    "scores": {
+      "correctness": "4",
+      "novelty": "3",
+      "recommendation": "weak accept",
+      "confidence": "3"
+    }
+  },
+  "critique_points": {
+    "point_001": "The paper lacks detailed experimental results and comparisons with other state-of-the-art methods. (The abstract and introduction mention experiments but do not provide detailed results or comparisons.)",
+    "point_002": "The scalability of the proposed methods to very large models or datasets is not discussed. (The paper does not mention any scalability analysis or experiments on large-scale datasets.)",
+    "point_003": "The paper does not provide a clear analysis of the computational overhead introduced by the ensemble method. (While the paper proposes cocktail finetuning to avoid running two models, it does not quantify the computational cost of the ensemble approach.)",
+    "point_004": "The theoretical analysis is limited to a specific setting and may not generalize to all natural language generation tasks. (Theoretical Study Section)",
+    "point_005": "Can the authors provide more detailed experimental results, including comparisons with other state-of-the-art methods? (Detailed experimental results are crucial for assessing the practical effectiveness of the proposed methods.)",
+    "point_006": "How do the proposed methods scale with larger models and datasets? (Understanding scalability is important for evaluating the applicability of the methods to real-world, large-scale scenarios.)",
+    "point_007": "What is the computational overhead of the ensemble method compared to full and lightweight finetuning individually? (Quantifying computational costs is essential for practical deployment considerations.)"
+  }
+}

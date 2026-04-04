@@ -1,0 +1,73 @@
+{
+  "paper_id": "paper_0001",
+  "model": "gpt-4o",
+  "latency_seconds": 10.952,
+  "token_usage": {
+    "input": 2971,
+    "output": 665
+  },
+  "structured": {
+    "summary": "The paper introduces 'Ask Me Anything Prompting' (AMA), a strategy for improving the performance of large language models (LLMs) by aggregating multiple imperfect prompts using weak supervision, achieving significant performance gains over few-shot baselines.",
+    "strengths": [
+      {
+        "point": "The AMA strategy demonstrates a significant performance improvement over few-shot baselines across various LLMs and tasks.",
+        "evidence": "The paper reports an average performance lift of 10.2% over the few-shot baseline across both small and large LMs."
+      },
+      {
+        "point": "The approach is scalable and task-agnostic, making it applicable to a wide range of models and tasks.",
+        "evidence": "AMA is applied to 20 popular language benchmarks and 14 open-source LLMs from 4 model families, showing broad applicability."
+      },
+      {
+        "point": "The use of weak supervision to aggregate predictions is novel in the context of prompting, improving reliability without additional training.",
+        "evidence": "The paper applies weak supervision to prompting broadly for the first time, showing it improves the reliability of prompting with off-the-shelf LLMs."
+      }
+    ],
+    "weaknesses": [
+      {
+        "point": "The paper lacks detailed experimental results and analysis for individual tasks and models.",
+        "evidence": "While the paper mentions performance improvements, it does not provide detailed breakdowns for each task or model."
+      },
+      {
+        "point": "The method's dependency on the quality of initial prompts is not fully addressed.",
+        "evidence": "The paper states that high-quality prompts are a precursor to improvements, but does not elaborate on how to ensure these are obtained."
+      },
+      {
+        "point": "The scalability of generating multiple prompts per input is not thoroughly evaluated.",
+        "evidence": "The paper mentions the challenge of scaling prompt generation but does not provide empirical evidence of how this is managed."
+      },
+      {
+        "point": "The approach may not be as effective for closed-book tasks where external context is not provided.",
+        "evidence": "The paper notes that the largest gains are on tasks where the knowledge required is found in the provided context."
+      }
+    ],
+    "questions": [
+      {
+        "question": "How does the AMA strategy perform on closed-book tasks compared to open-ended tasks?",
+        "motivation": "Understanding the limitations of the method on different types of tasks is crucial for assessing its general applicability."
+      },
+      {
+        "question": "Can the authors provide more detailed results for individual tasks and models?",
+        "motivation": "Detailed results would help in understanding the specific strengths and weaknesses of the AMA strategy across different scenarios."
+      },
+      {
+        "question": "What strategies are recommended for generating high-quality initial prompts?",
+        "motivation": "Since the method relies on the quality of initial prompts, guidance on generating these would be valuable for practitioners."
+      }
+    ],
+    "scores": {
+      "correctness": "4",
+      "novelty": "4",
+      "recommendation": "weak accept",
+      "confidence": "4"
+    }
+  },
+  "critique_points": {
+    "point_001": "The paper lacks detailed experimental results and analysis for individual tasks and models. (While the paper mentions performance improvements, it does not provide detailed breakdowns for each task or model.)",
+    "point_002": "The method's dependency on the quality of initial prompts is not fully addressed. (The paper states that high-quality prompts are a precursor to improvements, but does not elaborate on how to ensure these are obtained.)",
+    "point_003": "The scalability of generating multiple prompts per input is not thoroughly evaluated. (The paper mentions the challenge of scaling prompt generation but does not provide empirical evidence of how this is managed.)",
+    "point_004": "The approach may not be as effective for closed-book tasks where external context is not provided. (The paper notes that the largest gains are on tasks where the knowledge required is found in the provided context.)",
+    "point_005": "How does the AMA strategy perform on closed-book tasks compared to open-ended tasks? (Understanding the limitations of the method on different types of tasks is crucial for assessing its general applicability.)",
+    "point_006": "Can the authors provide more detailed results for individual tasks and models? (Detailed results would help in understanding the specific strengths and weaknesses of the AMA strategy across different scenarios.)",
+    "point_007": "What strategies are recommended for generating high-quality initial prompts? (Since the method relies on the quality of initial prompts, guidance on generating these would be valuable for practitioners.)"
+  }
+}

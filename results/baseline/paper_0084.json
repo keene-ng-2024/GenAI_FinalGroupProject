@@ -1,0 +1,78 @@
+{
+  "paper_id": "paper_0084",
+  "model": "gpt-4o",
+  "latency_seconds": 7.311,
+  "token_usage": {
+    "input": 3126,
+    "output": 698
+  },
+  "structured": {
+    "summary": "The paper presents a method for out-of-distribution (OOD) detection and selective generation in conditional language models (CLMs), aiming to improve the reliability of these models by abstaining from generating low-quality outputs on OOD inputs.",
+    "strengths": [
+      {
+        "point": "The paper proposes a lightweight and accurate OOD detection method using CLM embeddings.",
+        "evidence": "This is detailed in Section 2.2, where the authors describe using input and output embeddings for OOD detection."
+      },
+      {
+        "point": "The method significantly outperforms baselines on tasks like abstractive summarization and translation.",
+        "evidence": "The results are highlighted in the abstract and further discussed in the experiments section."
+      },
+      {
+        "point": "The paper introduces a novel evaluation framework for OOD detection and selective generation, including human quality ratings.",
+        "evidence": "This contribution is summarized in the abstract and detailed in the experiments section."
+      }
+    ],
+    "weaknesses": [
+      {
+        "point": "The paper lacks a detailed comparison with other state-of-the-art OOD detection methods in terms of computational efficiency.",
+        "evidence": "While the paper claims the method is lightweight, there is no detailed comparison with other methods in terms of computational cost."
+      },
+      {
+        "point": "The evaluation is limited to specific tasks (summarization and translation), which may not generalize to other CLM applications.",
+        "evidence": "The experiments focus on summarization and translation, as mentioned in the abstract and experiment setup."
+      },
+      {
+        "point": "The paper does not provide a thorough analysis of the limitations of using embeddings for OOD detection.",
+        "evidence": "While the method is described, potential limitations or failure cases of using embeddings are not discussed in detail."
+      },
+      {
+        "point": "The proposed method's performance on far-OOD datasets is not clearly distinguished from near-OOD datasets.",
+        "evidence": "The paper mentions near and far OOD datasets but does not provide a clear analysis of performance differences between these categories."
+      },
+      {
+        "point": "The paper could benefit from more detailed ablation studies to understand the contribution of each component of the proposed method.",
+        "evidence": "There is no detailed ablation study presented in the experiments section."
+      }
+    ],
+    "questions": [
+      {
+        "question": "How does the proposed method compare in terms of computational efficiency with other state-of-the-art OOD detection methods?",
+        "motivation": "Understanding the computational cost is crucial for practical deployment in real-world applications."
+      },
+      {
+        "question": "Can the proposed OOD detection method be generalized to other tasks beyond summarization and translation?",
+        "motivation": "Generalizability to other tasks would enhance the applicability of the proposed method."
+      },
+      {
+        "question": "What are the potential limitations or failure cases of using embeddings for OOD detection?",
+        "motivation": "Identifying limitations is important for understanding the robustness and reliability of the method."
+      }
+    ],
+    "scores": {
+      "correctness": "4",
+      "novelty": "4",
+      "recommendation": "weak accept",
+      "confidence": "3"
+    }
+  },
+  "critique_points": {
+    "point_001": "The paper lacks a detailed comparison with other state-of-the-art OOD detection methods in terms of computational efficiency. (While the paper claims the method is lightweight, there is no detailed comparison with other methods in terms of computational cost.)",
+    "point_002": "The evaluation is limited to specific tasks (summarization and translation), which may not generalize to other CLM applications. (The experiments focus on summarization and translation, as mentioned in the abstract and experiment setup.)",
+    "point_003": "The paper does not provide a thorough analysis of the limitations of using embeddings for OOD detection. (While the method is described, potential limitations or failure cases of using embeddings are not discussed in detail.)",
+    "point_004": "The proposed method's performance on far-OOD datasets is not clearly distinguished from near-OOD datasets. (The paper mentions near and far OOD datasets but does not provide a clear analysis of performance differences between these categories.)",
+    "point_005": "The paper could benefit from more detailed ablation studies to understand the contribution of each component of the proposed method. (There is no detailed ablation study presented in the experiments section.)",
+    "point_006": "How does the proposed method compare in terms of computational efficiency with other state-of-the-art OOD detection methods? (Understanding the computational cost is crucial for practical deployment in real-world applications.)",
+    "point_007": "Can the proposed OOD detection method be generalized to other tasks beyond summarization and translation? (Generalizability to other tasks would enhance the applicability of the proposed method.)",
+    "point_008": "What are the potential limitations or failure cases of using embeddings for OOD detection? (Identifying limitations is important for understanding the robustness and reliability of the method.)"
+  }
+}

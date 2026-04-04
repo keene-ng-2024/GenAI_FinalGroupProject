@@ -27,8 +27,6 @@ data/processed/reviews_parsed.json
 .hypothesis/
 
 # Results (large generated files)
-results/baseline/*.json
-results/agents/*.json
 results/*.png
 
 # Report
@@ -42,4 +40,3 @@ CLAUDE.md
 
 # Google Cloud credentials
 client_secret_*.json
-*.json
