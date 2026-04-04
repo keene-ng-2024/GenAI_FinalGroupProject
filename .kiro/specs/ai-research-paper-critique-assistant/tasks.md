@@ -38,7 +38,11 @@
 
 ### 2.2 Vertex AI Integration
 
+<<<<<<< HEAD
 - [ ] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
+=======
+- [x] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
+>>>>>>> vertexai
 - [x] 2.2.2 Create `src/agents/vertex_client.py` with `get_vertex_ai_client()` function (IR-4.1.1)
 - [x] 2.2.3 Implement `generate_content()` method with structured output support (FR-1.5.1)
 - [x] 2.2.4 Add retry logic with exponential backoff for 429 errors (NFR-2.2.1)
@@ -144,10 +148,10 @@
 
 ### 7.1 Environment Setup
 
-- [ ] 7.1.1 Set up Google Cloud Vertex AI credentials via `gcloud auth application-default login` (IR-4.1.1)
-- [ ] 7.1.2 Configure project and location in config.yaml (IR-4.1.1)
-- [ ] 7.1.3 Install required packages: `google-cloud-aiplatform>=1.143.0`, `langchain-google-vertexai>=3.2.2`, `langgraph>=1.2.6`, `pydantic>=2.0` (IR-4.1.1)
-- [ ] 7.1.4 Set up environment variables: `GOOGLE_APPLICATION_CREDENTIALS` (IR-4.1.1)
+- [x] 7.1.1 Set up Google Cloud Vertex AI credentials via `gcloud auth application-default login` (IR-4.1.1)
+- [x] 7.1.2 Configure project and location in config.yaml (IR-4.1.1)
+- [x] 7.1.3 Install required packages: `google-cloud-aiplatform>=1.143.0`, `langchain-google-vertexai>=3.2.2`, `langgraph>=1.2.6`, `pydantic>=2.0` (IR-4.1.1)
+- [x] 7.1.4 Set up environment variables: `GOOGLE_APPLICATION_CREDENTIALS` (IR-4.1.1)
 - [ ] 7.1.5 Test Vertex AI connection with sample paper (IR-4.1.1)
 
 ### 7.2 CI/CD

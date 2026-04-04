@@ -1,16 +1,24 @@
 """
 grounding_verifier.py
 ---------------------
+<<<<<<< HEAD
 Grounding verification for critique points using Vertex AI.
 
 This module provides:
 - verify_grounding(): Verify a single critique point
 - verify_all_grounding(): Batch verification of multiple critique points
 - Grounding score calculation with LLM sub-calls
+=======
+Grounding verification for critique points.
+
+This module provides functions to verify that critique points are
+properly grounded in the paper text using LLM-based verification.
+>>>>>>> vertexai
 """
 
 from __future__ import annotations
 
+<<<<<<< HEAD
 import re
 from typing import Dict, Any, List, Optional
 from dataclasses import dataclass
@@ -19,6 +27,20 @@ from src.agents.vertex_client import get_vertex_ai_client, generate_content, loa
 
 
 # ── Data structures ────────────────────────────────────────────────────────────
+=======
+import json
+import re
+import sys
+from pathlib import Path
+from typing import Dict, Any, Optional, List
+from dataclasses import dataclass
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from agents.vertex_client import get_vertex_ai_client
+
+>>>>>>> vertexai
 
 @dataclass
 class GroundingResult:
@@ -27,6 +49,7 @@ class GroundingResult:
     confidence: float
     evidence_match_score: float
     supporting_evidence: Optional[str] = None
+<<<<<<< HEAD
 
 
 # ── Core verification ────────────────────────────────────────────────────────
@@ -108,6 +131,88 @@ Respond with JSON:
         
     except Exception as e:
         print(f"  [ERROR] Grounding verification failed: {e}")
+=======
+    missing_evidence: Optional[str] = None
+
+
+def verify_grounding(
+    critique_point: str,
+    paper_section: str,
+    config: dict,
+    max_evidence_length: int = 1000,
+) -> GroundingResult:
+    """
+    Verify that a critique point is grounded in the paper.
+    
+    Args:
+        critique_point: The critique point to verify
+        paper_section: The relevant section of the paper
+        config: Configuration dictionary
+        max_evidence_length: Maximum length of evidence to consider
+        
+    Returns:
+        GroundingResult with verification metrics
+    """
+    vertex_config = config.get("vertex_ai", {})
+    model_name = vertex_config.get("grounding_verifier", {}).get("model", "gemini-1.5-flash-002")
+    
+    client = get_vertex_ai_client(config)
+    
+    prompt = f"""Analyze whether the following critique point is properly grounded in the provided paper section.
+
+Critique Point:
+"{critique_point}"
+
+Paper Section:
+"{paper_section[:max_evidence_length]}"
+
+Please evaluate:
+1. Is this critique point supported by evidence in the paper section?
+2. What is your confidence level (0-1)?
+3. What specific evidence from the paper supports or contradicts this point?
+
+Respond in JSON format:
+{{
+    "is_supported": true/false,
+    "confidence": 0.0-1.0,
+    "supporting_evidence": "quote from paper if supported, null otherwise",
+    "contradicting_evidence": "quote from paper if contradicted, null otherwise"
+}}"""
+    
+    try:
+        response = client.generate_content(
+            prompt=prompt,
+            model_name=model_name,
+            max_tokens=1024,
+        )
+        
+        # Parse JSON response
+        text = response["text"].strip()
+        
+        # Try to extract JSON from response
+        json_match = re.search(r'\{.*\}', text, re.DOTALL)
+        if json_match:
+            result = json.loads(json_match.group())
+        else:
+            # Fallback parsing
+            result = {
+                "is_supported": "supported" in text.lower() and "not supported" not in text.lower(),
+                "confidence": 0.5,
+                "supporting_evidence": None,
+                "contradicting_evidence": None,
+            }
+        
+        return GroundingResult(
+            is_supported=result.get("is_supported", False),
+            confidence=result.get("confidence", 0.5),
+            evidence_match_score=result.get("confidence", 0.5),
+            supporting_evidence=result.get("supporting_evidence"),
+            missing_evidence=result.get("contradicting_evidence"),
+        )
+        
+    except Exception as e:
+        print(f"  [WARN] Grounding verification failed: {e}")
+>>>>>>> vertexai
         return GroundingResult(
             is_supported=False,
             confidence=0.0,
@@ -115,6 +220,7 @@ Respond with JSON:
         )
 
 
+<<<<<<< HEAD
 def _parse_verification_response(text: str) -> Dict[str, Any]:
     """Parse JSON response from grounding verification."""
     # Try to find JSON in the response
@@ -269,3 +375,72 @@ def should_stop_debate(
                 return True
     
     return False
+=======
+def verify_all_grounding(
+    critique_text: str,
+    paper: dict,
+    config: dict,
+) -> Dict[str, Any]:
+    """
+    Verify grounding for all critique points in a critique.
+    
+    Args:
+        critique_text: JSON string of critique points
+        paper: Paper dictionary with full_text
+        config: Configuration dictionary
+        
+    Returns:
+        Dictionary with grounding verification metrics
+    """
+    try:
+        critique_points = json.loads(critique_text)
+    except json.JSONDecodeError:
+        critique_points = {}
+    
+    if not isinstance(critique_points, dict):
+        critique_points = {}
+    
+    if not critique_points:
+        return {
+            "total_points": 0,
+            "supported_points": 0,
+            "avg_confidence": 0.0,
+            "grounding_score": 0.0,
+        }
+    
+    # Get paper text
+    full_text = paper.get("full_text", "")
+    abstract = paper.get("abstract", "")
+    paper_text = full_text[:10000] if full_text else abstract  # Limit for efficiency
+    
+    # Verify each critique point
+    results = []
+    for point_id, point_text in critique_points.items():
+        result = verify_grounding(point_text, paper_text, config)
+        results.append(result)
+    
+    # Calculate metrics
+    total_points = len(results)
+    supported_points = sum(1 for r in results if r.is_supported)
+    avg_confidence = sum(r.confidence for r in results) / total_points if total_points > 0 else 0.0
+    
+    # Grounding score: weighted combination of support rate and confidence
+    grounding_score = (supported_points / total_points * 0.5 + avg_confidence * 0.5) if total_points > 0 else 0.0
+    
+    return {
+        "total_points": total_points,
+        "supported_points": supported_points,
+        "unsupported_points": total_points - supported_points,
+        "support_rate": supported_points / total_points if total_points > 0 else 0.0,
+        "avg_confidence": avg_confidence,
+        "grounding_score": grounding_score,
+        "per_point_results": [
+            {
+                "point_id": point_id,
+                "is_supported": r.is_supported,
+                "confidence": r.confidence,
+            }
+            for point_id, r in zip(critique_points.keys(), results)
+        ],
+    }
+>>>>>>> vertexai

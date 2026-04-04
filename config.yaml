@@ -82,5 +82,27 @@ vertex_ai:
 results:
   baseline_dir: "results/baseline"
   agents_dir: "results/agents"
+<<<<<<< HEAD
   n8n_dir: "results/n8n"
   vertexai_dir: "results/vertexai"
+=======
+  vertexai_dir: "results/vertexai"
+
+# ── Vertex AI Configuration ────────────────────────────────────────────────────
+vertex_ai:
+  project: "genai-vertexai-492302"
+  location: "asia-southeast1"
+  models:
+    reader: "claude-3-5-haiku@20241022"
+    critic: "claude-3-5-sonnet@20240620"
+    auditor: "claude-3-5-haiku@20241022"
+    summarizer: "claude-3-5-sonnet@20240620"
+  grounding_verifier:
+    model: "gemini-1.5-flash-002"
+    max_tokens: 2048
+    early_stop_phrases:
+      - "no further concerns"
+      - "i am satisfied"
+      - "well-supported"
+      - "approve"
+>>>>>>> vertexai
