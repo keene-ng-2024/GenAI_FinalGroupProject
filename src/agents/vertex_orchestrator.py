@@ -1,23 +1,15 @@
 """
 vertex_orchestrator.py
 ----------------------
-<<<<<<< HEAD
 Vertex AI orchestrator for the multi-agent paper critique system.
 
 This orchestrator uses Vertex AI (Gemini) models for all agent roles
 and integrates with the grounding verifier for evidence-based critique.
-=======
-Main orchestrator for Vertex AI multi-agent critique pipeline.
-
-This module runs the full agentic critique loop using Vertex AI models
-and saves results to results/vertexai/
->>>>>>> vertexai
 """
 
 from __future__ import annotations
 
 import json
-<<<<<<< HEAD
 import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional
@@ -39,123 +31,20 @@ from src.agents.vertex_client import (
 )
 from src.agents.personas import AgentRole, BaseAgent, build_agents
 from src.agents.grounding_verifier import verify_all_grounding
-=======
-import os
-import re
-import sys
-import time
-from pathlib import Path
-
-import yaml
-from dotenv import load_dotenv
-
-# Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent))
-
-from agents.vertex_client import get_vertex_ai_client
-from agents.grounding_verifier import verify_all_grounding
-from agents.data_models import (
-    Paper,
-    CritiquePoint,
-    StructuredReview,
-    CritiqueResult
-)
-
-load_dotenv()
->>>>>>> vertexai
 
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 
 def load_config(config_path: str = "config.yaml") -> dict:
-<<<<<<< HEAD
     """Load configuration from YAML file."""
-=======
->>>>>>> vertexai
     with open(config_path) as f:
         return yaml.safe_load(f)
 
 
-<<<<<<< HEAD
 # ── Output parsing ─────────────────────────────────────────────────────────────
 
 def _parse_structured_output(raw: str) -> dict:
     """Parse the Summarizer's structured JSON output with fallbacks."""
-=======
-# ── Vertex AI Agent Implementation ─────────────────────────────────────────────
-
-class VertexAIAgent:
-    """Agent that uses Vertex AI models for critique generation."""
-    
-    def __init__(self, role: str, model_name: str, config: dict):
-        self.role = role
-        self.model_name = model_name
-        self.config = config
-        self.client = get_vertex_ai_client(config)
-        self.total_input_tokens = 0
-        self.total_output_tokens = 0
-    
-    def _call_model(self, prompt: str, system_instruction: str = None) -> str:
-        """Call Vertex AI model with the given prompt."""
-        response = self.client.generate_content(
-            prompt=prompt,
-            system_instruction=system_instruction,
-            model_name=self.model_name
-        )
-        self.total_input_tokens += response.input_tokens
-        self.total_output_tokens += response.output_tokens
-        return response.text
-    
-    def summarize_paper(self, paper_text: str) -> str:
-        """Generate a summary of the paper."""
-        prompt = f"""Summarize the following paper in 3-5 sentences:
-
-{paper_text}
-
-Summary:"""
-        return self._call_model(prompt, "You are a helpful research assistant.")
-    
-    def generate_critique(self, summary: str) -> str:
-        """Generate initial critique points based on the paper summary."""
-        prompt = f"""Review the following paper summary and provide constructive critique.
-Focus on potential issues with methodology, claims, or evidence.
-
-Summary:
-{summary}
-
-Provide your critique as a list of specific points with supporting evidence."""
-        return self._call_model(prompt, "You are an expert academic reviewer.")
-    
-    def audit(self, critique: str, summary: str) -> str:
-        """Audit the critique and provide feedback."""
-        prompt = f"""Review the following critique of a paper and provide feedback.
-Check if the critique points are well-supported and identify any gaps.
-
-Critique:
-{critique}
-
-Summary:
-{summary}
-
-Provide specific feedback on the critique quality."""
-        return self._call_model(prompt, "You are a critical academic reviewer.")
-    
-    def revise_critique(self, audit_feedback: str) -> str:
-        """Revise critique based on audit feedback."""
-        prompt = f"""Revise your previous critique based on the following feedback:
-
-Feedback:
-{audit_feedback}
-
-Provide an improved critique that addresses the feedback."""
-        return self._call_model(prompt, "You are an expert academic reviewer.")
-
-
-# ── Helpers ────────────────────────────────────────────────────────────────────
-
-def _parse_structured_output(raw: str) -> dict:
-    """Parse the Summariser's structured JSON output with fallbacks."""
->>>>>>> vertexai
     text = raw.strip()
 
     # Strip markdown fences if present
@@ -171,10 +60,7 @@ def _parse_structured_output(raw: str) -> dict:
         pass
 
     # Fallback: extract the first JSON object with regex
-<<<<<<< HEAD
     import re
-=======
->>>>>>> vertexai
     match = re.search(r"\{.*\}", text, re.DOTALL)
     if match:
         try:
@@ -217,13 +103,9 @@ def _flatten_to_critique_points(structured: dict) -> dict[str, str]:
 
 
 def _build_reviewer_scores_block(reviews: list[dict]) -> str:
-<<<<<<< HEAD
     """Average the raw reviewer scores and format them as context for the Summarizer."""
     import numpy as np
     
-=======
-    """Average the raw reviewer scores and format them as context for the Summariser."""
->>>>>>> vertexai
     score_keys = ["Correctness", "Technical Novelty And Significance",
                   "Empirical Novelty And Significance", "Recommendation", "Confidence"]
     averages = {}
@@ -236,11 +118,7 @@ def _build_reviewer_scores_block(reviews: list[dict]) -> str:
             except (ValueError, TypeError):
                 continue
         if vals:
-<<<<<<< HEAD
             averages[key] = round(np.mean(vals), 1)
-=======
-            averages[key] = round(sum(vals) / len(vals), 1)
->>>>>>> vertexai
 
     if not averages:
         return ""
@@ -251,7 +129,6 @@ def _build_reviewer_scores_block(reviews: list[dict]) -> str:
     return "\n".join(lines)
 
 
-<<<<<<< HEAD
 # ── Vertex AI Agent ────────────────────────────────────────────────────────────
 
 class VertexAgent:
@@ -431,67 +308,10 @@ def run_pipeline(
     )
     log("Critic (initial)", critique)
     
-=======
-# ── Agentic loop with Vertex AI ────────────────────────────────────────────────
-
-def run_vertex_ai_critique(
-    paper_id: str,
-    paper: dict,
-    cfg: dict,
-) -> dict:
-    """Run the full multi-agent critique loop for one paper using Vertex AI.
-
-    Args:
-        paper_id: Unique identifier for the paper.
-        paper:    Full paper dict from reviews_parsed.json
-        cfg:      Config dict loaded from config.yaml.
-    """
-    start_time = time.perf_counter()
-
-    max_rounds = cfg["agent"]["max_rounds"]
-    truncate_chars = cfg["agent"].get("truncate_body_chars", 12000)
-    early_stop_phrases = cfg["agent"].get("early_stop_phrases", [])
-    
-    # Get Vertex AI model mappings
-    model_map = cfg["vertex_ai"]["models"]
-    
-    # Build agents with Vertex AI models
-    agents = {
-        "reader": VertexAIAgent("Reader", model_map["reader"], cfg),
-        "critic": VertexAIAgent("Critic", model_map["critic"], cfg),
-        "auditor": VertexAIAgent("Auditor", model_map["auditor"], cfg),
-        "summarizer": VertexAIAgent("Summarizer", model_map["summarizer"], cfg),
-    }
-    
-    transcript = []
-
-    def log(role: str, content: str) -> None:
-        transcript.append({"role": role, "content": content})
-        print(f"\n    [{role}]\n{content[:300]}{'…' if len(content) > 300 else ''}")
-
-    # Prepare paper text
-    title = paper.get("title", paper_id)
-    full_text = paper.get("full_text", "")
-    paper_text = full_text[:truncate_chars] if full_text else paper.get("abstract", "")
-    if not paper_text:
-        paper_text = title
-
-    # ── Step 1: Reader summarises ──────────────────────────────────────────────
-    print(f"\n  [ROUND 0] Reading paper …")
-    summary = agents["reader"].summarize_paper(f"Title: {title}\n\n{paper_text}")
-    log("Reader", summary)
-
-    # ── Step 2: Critic generates initial critique ──────────────────────────────
-    print(f"\n  [ROUND 0] Critic generating initial points …")
-    critique = agents["critic"].generate_critique(summary)
-    log("Critic (initial)", critique)
-
->>>>>>> vertexai
     # ── Steps 3–4: Auditor ↔ Critic debate ────────────────────────────────────
     rounds_done = 0
     for round_num in range(1, max_rounds + 1):
         print(f"\n  [ROUND {round_num}] Auditor auditing …")
-<<<<<<< HEAD
         audit_feedback = agents["auditor"].chat(
             f"Paper summary:\n{summary}\n\n"
             f"Critic's points:\n{critique}\n\n"
@@ -518,42 +338,11 @@ def run_vertex_ai_critique(
     
     # Build context: reviewer scores + full debate transcript
     reviewer_scores_block = _build_reviewer_scores_block([])
-=======
-        audit_feedback = agents["auditor"].audit(critique, summary)
-        log(f"Auditor (round {round_num})", audit_feedback)
-
-        rounds_done = round_num
-
-        # Early stopping check
-        feedback_lower = audit_feedback.lower()
-        should_stop = False
-        for phrase in early_stop_phrases:
-            idx = feedback_lower.find(phrase)
-            if idx >= 0:
-                prefix = feedback_lower[max(0, idx - 15):idx]
-                if any(neg in prefix for neg in ["not ", "no ", "don't ", "isn't ", "hardly "]):
-                    continue
-                should_stop = True
-                break
-        if should_stop:
-            print(f"  [STOP] Auditor satisfied after round {round_num}.")
-            break
-
-        print(f"  [ROUND {round_num}] Critic revising …")
-        critique = agents["critic"].revise_critique(audit_feedback)
-        log(f"Critic (round {round_num})", critique)
-
-    # ── Step 5: Summariser consolidates ────────────────────────────────────────
-    print(f"\n  [SUMMARISE] Consolidating debate …")
-
-    reviewer_scores_block = _build_reviewer_scores_block(paper.get("reviews", []))
->>>>>>> vertexai
     full_debate = "\n\n".join(
         f"=== {entry['role']} ===\n{entry['content']}" for entry in transcript
     )
     if reviewer_scores_block:
         full_debate = reviewer_scores_block + "\n\n" + full_debate
-<<<<<<< HEAD
     
     raw_summary = agents["summarizer"].chat(
         f"Here is the full debate transcript:\n\n{full_debate}\n\n"
@@ -576,57 +365,22 @@ def run_vertex_ai_critique(
     return {
         "paper_id": paper_id,
         "model": vertex_config.get("critic_model", "gemini-1.5-pro"),
-=======
-
-    raw_summary = agents["summarizer"]._call_model(
-        f"Consolidate this debate into a structured JSON review:\n\n{full_debate}",
-        "Return a JSON object with summary, strengths, weaknesses, questions, and scores."
-    )
-    log("Summarizer", raw_summary)
-
-    # Parse structured output
-    structured = _parse_structured_output(raw_summary)
-    critique_points = _flatten_to_critique_points(structured)
-
-    # Collect total token usage
-    total_input = sum(a.total_input_tokens for a in agents.values())
-    total_output = sum(a.total_output_tokens for a in agents.values())
-
-    latency_seconds = round(time.perf_counter() - start_time, 2)
-
-    # Run grounding verification
-    grounding_result = verify_all_grounding(
-        json.dumps(critique_points),
-        paper,
-        cfg
-    )
-
-    return {
-        "paper_id": paper_id,
-        "title": title,
-        "model": cfg["vertex_ai"]["models"]["critic"],
->>>>>>> vertexai
         "rounds": rounds_done,
         "latency_seconds": latency_seconds,
         "token_usage": {"input": total_input, "output": total_output},
         "transcript": transcript,
         "structured": structured,
         "critique_points": critique_points,
-<<<<<<< HEAD
         "grounding_verifier_scores": grounding_scores,
         "run_metadata": {
             "latency_ms": latency_seconds * 1000,
             "timestamp": time.time(),
         },
-=======
-        "grounding_verifier_scores": grounding_result,
->>>>>>> vertexai
     }
 
 
 # ── Main pipeline ──────────────────────────────────────────────────────────────
 
-<<<<<<< HEAD
 def run_all_papers(
     reviews_path: str,
     output_dir: str,
@@ -649,22 +403,11 @@ def run_all_papers(
     out_dir = Path(output_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     
-=======
-def run_all_papers_vertex_ai(reviews_path: str, output_dir: str, cfg: dict) -> None:
-    """Run Vertex AI critique pipeline on all papers."""
-    with open(reviews_path) as f:
-        all_papers: dict = json.load(f)
-
-    out_dir = Path(output_dir)
-    out_dir.mkdir(parents=True, exist_ok=True)
-
->>>>>>> vertexai
     for paper_id, paper in all_papers.items():
         out_file = out_dir / f"{paper_id}.json"
         if out_file.exists():
             print(f"  [SKIP] {paper_id}")
             continue
-<<<<<<< HEAD
         
         print(f"\n{'='*60}\n  [PAPER] {paper_id} — {paper.get('title', '')[:50]}\n{'='*60}")
         
@@ -681,26 +424,6 @@ def run_all_papers_vertex_ai(reviews_path: str, output_dir: str, cfg: dict) -> N
         with open(out_file, "w") as f:
             json.dump(result, f, indent=2)
         
-=======
-
-        print(f"\n{'='*60}\n  [PAPER] {paper_id} — {paper.get('title', '')[:50]}\n{'='*60}")
-
-        try:
-            result = run_vertex_ai_critique(
-                paper_id=paper_id,
-                paper=paper,
-                cfg=cfg,
-            )
-        except Exception as exc:
-            print(f"\n  [ERROR] {paper_id} failed: {exc}")
-            import traceback
-            traceback.print_exc()
-            continue
-
-        with open(out_file, "w") as f:
-            json.dump(result, f, indent=2)
-
->>>>>>> vertexai
         n_points = len(result["critique_points"])
         print(f"\n  [SAVED] {n_points} weakness points → {out_file}")
         print(f"  [COST]  {result['token_usage']['input']:,} in / "
@@ -712,21 +435,7 @@ def run_all_papers_vertex_ai(reviews_path: str, output_dir: str, cfg: dict) -> N
 
 if __name__ == "__main__":
     cfg = load_config()
-<<<<<<< HEAD
     run_all_papers(
-=======
-    
-    # Verify Vertex AI configuration
-    if "vertex_ai" not in cfg:
-        raise ValueError("Vertex AI configuration not found in config.yaml")
-    
-    print(f"Running Vertex AI critique pipeline...")
-    print(f"Project: {cfg['vertex_ai']['project']}")
-    print(f"Location: {cfg['vertex_ai']['location']}")
-    print(f"Output directory: {cfg['results']['vertexai_dir']}")
-    
-    run_all_papers_vertex_ai(
->>>>>>> vertexai
         reviews_path=cfg["data"]["reviews_file"],
         output_dir=cfg["results"]["vertexai_dir"],
         cfg=cfg,
