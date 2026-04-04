@@ -11,12 +11,14 @@ from __future__ import annotations
 
 import json
 import time
-from pathlib import Path
-from typing import Dict, Any, List, Optional
-
+import sys
 import yaml
+from pathlib import Path
 
-from src.agents.state import (
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from agents.state import (
     create_initial_state,
     update_transcript,
     update_token_usage,
@@ -24,13 +26,12 @@ from src.agents.state import (
     should_early_stop,
     get_latency_seconds,
 )
-from src.agents.vertex_client import (
+from agents.vertex_client import (
     get_vertex_ai_client,
-    generate_content,
-    load_config,
 )
-from src.agents.personas import AgentRole, BaseAgent, build_agents
-from src.agents.grounding_verifier import verify_all_grounding
+from agents.personas import AgentRole, BaseAgent
+from agents.agents import build_agents
+from agents.grounding_verifier import verify_all_grounding
 
 
 # ── Config ─────────────────────────────────────────────────────────────────────
@@ -156,15 +157,17 @@ class VertexAgent:
         """Send a message and get a reply."""
         self.history.append({"role": "user", "content": user_message})
         
-        response = generate_content(
-            client=self.client,
-            model=self.model,
-            messages=self.history,
-            config=self.config,
+        response = self.client.generate_content(
+            prompt=user_message,
+            system_instruction=self.system_prompt,
+            model_name=self.model,
         )
         
         text = response.get("text", "")
-        token_usage = response.get("token_usage", {})
+        token_usage = {
+            "input_tokens": response.get("input_tokens", 0),
+            "output_tokens": response.get("output_tokens", 0),
+        }
         
         self.total_input_tokens += token_usage.get("input_tokens", 0)
         self.total_output_tokens += token_usage.get("output_tokens", 0)
@@ -438,5 +441,5 @@ if __name__ == "__main__":
     run_all_papers(
         reviews_path=cfg["data"]["reviews_file"],
         output_dir=cfg["results"]["vertexai_dir"],
-        cfg=cfg,
+        config=cfg,
     )

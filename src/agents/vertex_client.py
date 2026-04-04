@@ -198,14 +198,14 @@ class VertexAIClient:
         
         # Get model name
         if model_name is None:
-            model_name = self.model_map.get("default", "gemini-1.5-flash-002")
+            model_name = self.model_map.get("default", "gemini-1.5-flash")
         
-        # Build model name with full path
-        full_model_name = f"projects/{self.project}/locations/{self.location}/publishers/google/models/{model_name}"
+        # Use the model name directly (Vertex AI SDK handles the full path internally)
+        # Model names like "gemini-1.5-flash" or "gemini-1.5-flash-001" work directly
         
         try:
             # Generate content
-            model = self._get_client()(model_name=full_model_name)
+            model = self._get_client()(model_name=model_name)
             
             # Build contents
             contents = []
