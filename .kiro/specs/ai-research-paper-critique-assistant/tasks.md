@@ -38,11 +38,7 @@
 
 ### 2.2 Vertex AI Integration
 
-<<<<<<< HEAD
-- [ ] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
-=======
 - [x] 2.2.1 Install `google-cloud-vertexai>=1.143.0` and `langchain-google-vertexai>=3.2.2` packages (IR-4.1.1)
->>>>>>> vertexai
 - [x] 2.2.2 Create `src/agents/vertex_client.py` with `get_vertex_ai_client()` function (IR-4.1.1)
 - [x] 2.2.3 Implement `generate_content()` method with structured output support (FR-1.5.1)
 - [x] 2.2.4 Add retry logic with exponential backoff for 429 errors (NFR-2.2.1)
