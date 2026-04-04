@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\constants\prediction.py
+# hypothesis_version: 6.151.10
+
+[8080, '*/*', '-', '.', '/health', '/predict', 'AIP_HEALTH_ROUTE', 'AIP_HTTP_PORT', 'AIP_PREDICT_ROUTE', 'AIP_STORAGE_URI', '^[Aa]ccept$', 'application/json', 'compute', 'model.bst', 'model.joblib', 'model.pkl', 'sklearn', 'tensorflow', 'tf', 'tf2', 'utility', 'xgboost']

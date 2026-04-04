@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\batch.py
+# hypothesis_version: 6.151.10
+
+[b'\nMIME-Version: 1.0\n\n', b'Content-Type: ', 200, 204, 300, 1000, 'BATCH', 'Content-ID', 'Content-Length', 'Content-Type', 'No deferred requests', 'POST', 'application/json', 'content-type', 'http', 'utf-8']

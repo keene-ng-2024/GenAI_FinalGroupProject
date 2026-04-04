@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\base.py
+# hypothesis_version: 6.151.10
+
+[',', '/', 'Deleting', 'FutureManager', 'PreviewClass', 'VertexAiResourceNoun', '^[\\w-]+@?[\\w-]+$', '__origin__', '_authorized_session', '_gca_resource', '_preview_instance', 'aiplatform', 'api_client', 'credentials', 'deleted.', 'desc', 'encryption_spec', 'filter', 'location', 'name', 'order_by', 'parent', 'project', 'read_mask', 'return', 'self', 'sync']

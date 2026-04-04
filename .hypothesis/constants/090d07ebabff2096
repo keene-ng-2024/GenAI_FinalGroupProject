@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_bindings\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'create_tag_binding', 'delete_tag_binding', 'get_operation', 'grpc', 'list_effective_tags', 'list_tag_bindings', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'status', 'utf-8']

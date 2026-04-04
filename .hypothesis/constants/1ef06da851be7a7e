@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\matching_engine\_protos\match_service_pb2.py
+# hypothesis_version: 6.151.10
+
+[164, 219, 222, 830, 850, 861, 864, 1219, 1222, 1388, 1481, 1483, 1549, 1551, 1648, 1651, 1774, 1928, 1931, 2058, 2221, 2223, 2291, 2294, 2473, 2593, 2602, 2605, 3023, '_BATCHMATCHREQUEST', '_BATCHMATCHRESPONSE', '_EMBEDDING', '_MATCHREQUEST', '_MATCHREQUEST_RRF', '_MATCHRESPONSE', '_MATCHSERVICE', '_NAMESPACE', '_NUMERICNAMESPACE', '_SPARSEEMBEDDING']

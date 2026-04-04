@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\matching_engine\matching_engine_index.py
+# hypothesis_version: 6.151.10
+
+['BATCH_UPDATE', 'Import', 'Imported', 'Importing embeddings', 'MatchingEngineIndex', 'Removed datapoints', 'Removing datapoints', 'STREAM_UPDATE', 'Update', 'Updated', 'Updating', 'Upserted datapoints', 'Upserting datapoints', 'config', 'contentsDeltaUri', 'delete_index', 'description', 'display_name', 'get_index', 'index', 'index_path', 'indexes', 'isCompleteOverwrite', 'labels', 'list_indexes', 'metadata', 'parse_index_path']

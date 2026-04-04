@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\_http\__init__.py
+# hypothesis_version: 6.151.10
+
+[200, 300, ' gccl/{}', '?', 'Accept-Encoding', 'Content-Type', 'User-Agent', 'X-Goog-API-Client', 'always', 'application/json', 'auto', 'false', 'gcloud-python/{0}', 'gl-python/', 'gzip', 'never', 'prettyPrint']

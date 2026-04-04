@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\constants.py
+# hypothesis_version: 6.151.10
+
+[128, '-tb-run', '0.0.1', 'AIP_EXPERIMENT_NAME', '_custom_jobs', '_metrics', '_params', '_state', 'experiment_deleted', 'input:', 'metric', 'param', 'resourceName', 'system.Experiment', 'system.ExperimentRun', 'system.Metrics', 'system.Pipeline', 'system.PipelineRun', 'system.Run', 'tensorboard_link', 'time_series_metric', 'vertex_experiment']

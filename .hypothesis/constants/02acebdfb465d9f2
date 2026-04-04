@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\types\tag_keys.py
+# hypothesis_version: 6.151.10
+
+['CreateTagKeyMetadata', 'CreateTagKeyRequest', 'DeleteTagKeyMetadata', 'DeleteTagKeyRequest', 'GetTagKeyRequest', 'ListTagKeysRequest', 'ListTagKeysResponse', 'Purpose', 'TagKey', 'UpdateTagKeyMetadata', 'UpdateTagKeyRequest']

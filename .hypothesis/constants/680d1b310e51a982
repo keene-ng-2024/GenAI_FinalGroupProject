@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\featurestore\_entity_type.py
+# hypothesis_version: 6.151.10
+
+[1024, '*', '-', 'Delete', 'Deleting', 'EntityType', 'Import', 'Importing', 'NULLABLE', 'Updating', 'Writing', '_', '_EntityType', '`', '`, `', 'avro', 'bigquery.SchemaField', 'csv', 'delete_entity_type', 'deleted.', 'description', 'entityType', 'entityTypes', 'entity_id', 'entity_type', 'entity_type_path', 'feature values', 'featurestore', 'featurestore.Feature', 'field_type', 'get_entity_type', 'imported', 'index', 'labels', 'list_entity_types', 'location', 'mode', 'pd.DataFrame', 'project', 'self', 'updated', 'value', 'valueType', 'value_type', 'values', 'written']

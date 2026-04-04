@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_helpers.py
+# hypothesis_version: 6.151.10
+
+[8192, ', ', '/', 'API_VERSION_OVERRIDE', 'Accept', 'Accept-Encoding', 'If-Match', 'If-None-Match', 'User-Agent', 'X-Goog-API-Client', 'application/json', 'big', 'content-type', 'full', 'gccl-invocation-id/', 'generation', 'googleapis.com', 'gzip, deflate', 'https://', 'ifGenerationMatch', 'ifGenerationNotMatch', 'if_etag_match', 'if_etag_not_match', 'if_generation_match', 'noAcl', 'projection', 'softDeleted', 'userProject', 'v1']

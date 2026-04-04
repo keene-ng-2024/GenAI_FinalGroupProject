@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\acl.py
+# hypothesis_version: 6.151.10
+
+['-', 'OWNER', 'READER', 'Storage.ACL.clear', 'Storage.ACL.reload', 'Storage.ACL.save', 'WRITER', 'acl', 'allUsers', 'authenticated-read', 'authenticatedRead', 'bucket-owner-read', 'bucketOwnerRead', 'defaultObjectAcl', 'domain', 'entity', 'full', 'group', 'items', 'predefinedAcl', 'private', 'project-private', 'projectPrivate', 'projection', 'public-read', 'public-read-write', 'publicRead', 'publicReadWrite', 'role', 'user', 'userProject']

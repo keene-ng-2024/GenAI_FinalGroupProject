@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\v1beta1\schema\trainingjob\definition\__init__.py
+# hypothesis_version: 6.151.10
+
+['AutoMlForecasting', 'AutoMlTables', 'AutoMlTablesInputs', 'AutoMlTablesMetadata', 'AutoMlTextExtraction', 'AutoMlTextSentiment']

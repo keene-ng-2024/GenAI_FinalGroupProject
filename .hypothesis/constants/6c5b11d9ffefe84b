@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\folders\client.py
+# hypothesis_version: 6.151.10
+
+['.googleapis.com', '.mtls.googleapis.com', 'FoldersClient', '_credentials', 'always', 'api_key', 'append', 'async', 'auto', 'credentials', 'credentialsInfo', 'credentialsType', 'false', 'folder.name', 'folders/{folder}', 'get_cred_info', 'googleapis.com', 'grpc', 'grpc_asyncio', 'name', 'never', 'projects/{project}', 'resource', 'rest', 'serviceName', 'true', 'universeDomain', 'universe_domain']

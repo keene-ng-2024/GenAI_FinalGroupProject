@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\constants.py
+# hypothesis_version: 6.151.10
+
+['ARCHIVE', 'ASYNC_TURBO', 'COLDLINE', 'DEFAULT', 'FullyRestricted', 'MULTI_REGIONAL', 'NEARLINE', 'NotRestricted', 'REGIONAL', 'STANDARD', 'dual-region', 'enforced', 'inherited', 'multi-region', 'region', 'unspecified']

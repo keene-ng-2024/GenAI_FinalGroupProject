@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\fileio.py
+# hypothesis_version: 6.151.10
+
+[256, 1024, 'checksum', 'content_type', 'ifGenerationMatch', 'if_generation_match', 'invalid whence value', 'predefined_acl', 'raw_download', 'retry', 'single_shot_download', 'timeout']

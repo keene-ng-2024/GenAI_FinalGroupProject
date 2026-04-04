@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_media\_upload.py
+# hypothesis_version: 6.151.10
+
+[b'\r\n', b'"', b'--', b'content-type: ', b'multipart/related; boundary="', 400, 1024, '?uploads', 'BadDigest', 'Code', 'CrcMismatch', 'DELETE', 'Details', 'ETag', 'InvalidDigest', 'Message', 'POST', 'PUT', 'Part', 'PartNumber', 'Upload has finished.', 'UploadId', 'X-Goog-Signature', 'auto', 'br', 'bytes */*', 'bytes */{:d}', 'bytes {:d}-{:d}/*', 'bytes {:d}-{:d}/{:d}', 'content-type', 'crc32c', 'end_byte', 'etag', 'location', 'md5', 'utf-8', 'x-goog-hash', 'x-goog-signature', '{:d}']

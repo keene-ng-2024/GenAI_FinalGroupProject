@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_bindings\transports\rest_base.py
+# hypothesis_version: 6.151.10
+
+['$alt', '/v3/effectiveTags', '/v3/tagBindings', 'body', 'delete', 'get', 'https', 'method', 'parent', 'post', 'query_params', 'scheme', 'tag_binding', 'uri']

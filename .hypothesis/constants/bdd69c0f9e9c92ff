@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\matching_engine\matching_engine_index_config.py
+# hypothesis_version: 6.151.10
+
+['COSINE_DISTANCE', 'DOT_PRODUCT_DISTANCE', 'L1_DISTANCE', 'NONE', 'SQUARED_L2_DISTANCE', 'UNIT_L2_NORM', 'algorithmConfig', 'bruteForceConfig', 'dimensions', 'distanceMeasureType', 'featureNormType', 'shardSize', 'treeAhConfig']

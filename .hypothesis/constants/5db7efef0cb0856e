@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_media\_download.py
+# hypothesis_version: 6.151.10
+
+['0-{:d}', 'Expected', 'GET', 'Received', 'auto', 'bytes */0', 'bytes=', 'content-length', 'crc32c', 'end_byte', 'md5', 'start_byte', 'total_bytes', 'transfer-encoding', '{:d}', '{:d}-', '{:d}-{:d}']

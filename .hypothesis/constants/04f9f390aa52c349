@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\folders\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'Content-Type', 'CreateFolder', 'DeleteFolder', 'FoldersRestTransport', 'GetFolder', 'GetIamPolicy', 'GetOperation', 'ListFolders', 'MoveFolder', 'SearchFolders', 'SetIamPolicy', 'TestIamPermissions', 'UndeleteFolder', 'UpdateFolder', 'application/json', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v3', '{host}{uri}']

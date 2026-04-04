@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_media\_helpers.py
+# hypothesis_version: 6.151.10
+
+[',', '=', 'Expected one of', 'c', 'content-encoding', 'content-range', 'crc32c', 'generation', 'gzip', 'md5', 'md5Hash', 'range', 'utf-8', 'x-goog-generation', 'x-goog-hash']

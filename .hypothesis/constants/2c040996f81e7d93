@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_media\requests\download.py
+# hypothesis_version: 6.151.10
+
+['BrotliDecoder', 'br', 'content-encoding', 'data', 'generation', 'gzip', 'headers', 'stream', 'timeout']

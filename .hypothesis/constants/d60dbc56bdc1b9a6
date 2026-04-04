@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\artifact.py
+# hypothesis_version: 6.151.10
+
+['Artifact', 'artifact_path', 'artifacts', 'default', 'delete_artifact', 'display_name', 'get_artifact', 'google.VertexModel', 'list_artifacts', 'metadata_store', 'parse_artifact_path', 'resourceName']

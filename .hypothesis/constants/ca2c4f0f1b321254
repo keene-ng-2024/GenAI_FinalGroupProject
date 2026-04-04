@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\client.py
+# hypothesis_version: 6.151.10
+
+[',', '/b', '/o', ':', '<none>', 'DELETE', 'GET', 'GOOG4-RSA-SHA256', 'PATCH', 'POST', 'PUT', 'Z', 'api_endpoint', 'api_key', 'auto', 'bucket', 'client_info', 'conditions', 'dataLocations', 'delimiter', 'email_address', 'endOffset', 'expiration', 'fields', 'generation', 'http', 'key', 'location', 'matchGlob', 'metadata', 'method', 'name', 'noAcl', 'path', 'policy', 'predefinedAcl', 'prefix', 'project', 'projection', 'returnPartialSuccess', 'secret', 'serviceAccountEmail', 'showDeletedKeys', 'softDeleted', 'startOffset', 'timeout', 'true', 'unreachable', 'url', 'userProject', 'utf-8', 'versions', 'x-goog-algorithm', 'x-goog-credential', 'x-goog-date', 'x-goog-signature', 'x-ignore-']

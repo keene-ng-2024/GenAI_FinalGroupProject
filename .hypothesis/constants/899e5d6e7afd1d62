@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_keys\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'TagKeysGrpcTransport', 'create_tag_key', 'delete_tag_key', 'get_iam_policy', 'get_operation', 'get_tag_key', 'grpc', 'list_tag_keys', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_tag_key', 'utf-8']

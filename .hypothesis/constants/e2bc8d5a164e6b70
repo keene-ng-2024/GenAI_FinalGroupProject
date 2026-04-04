@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_keys\transports\rest_base.py
+# hypothesis_version: 6.151.10
+
+['$alt', '*', '/v3/tagKeys', '/v3/{name=tagKeys/*}', 'body', 'delete', 'get', 'https', 'method', 'name', 'parent', 'patch', 'post', 'query_params', 'scheme', 'tag_key', 'uri']

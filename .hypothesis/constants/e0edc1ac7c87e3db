@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\hmac_key.py
+# hypothesis_version: 6.151.10
+
+['ACTIVE', 'DELETED', 'INACTIVE', "No 'access_id' set.", 'accessId', 'etag', 'id', 'projectId', 'serviceAccountEmail', 'state', 'timeCreated', 'updated', 'userProject']

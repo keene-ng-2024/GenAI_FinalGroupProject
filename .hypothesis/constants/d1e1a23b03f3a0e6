@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\initializer.py
+# hypothesis_version: 6.151.10
+
+['/', 'Async', 'CLOUD_ML_PROJECT_ID', 'CLOUD_ML_REGION', 'COLAB_ENTERPRISE', 'Example usage:\n', 'GOOGLE_CLOUD_PROJECT', 'GOOGLE_CLOUD_REGION', 'VERTEX_PRODUCT', 'WORKBENCH_INSTANCE', '__name__', 'client_info', 'client_options', 'cls', 'credentials', 'global', 'google.auth._default', 'grpc', 'locations', 'metadata', 'projects', 'rest', 'rest_asyncio', 'self', 'transport', 'vertexai.', 'were detected.']

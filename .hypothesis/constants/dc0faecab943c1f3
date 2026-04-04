@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\_pipeline_based_service\pipeline_based_service.py
+# hypothesis_version: 6.151.10
+
+['component_type', 'delete_pipeline_job', 'get_pipeline_job', 'list_pipeline_jobs', 'name', 'pipelineInfo', 'pipelineJob', 'pipeline_job_path', 'system.DagExecution', 'system.Run']

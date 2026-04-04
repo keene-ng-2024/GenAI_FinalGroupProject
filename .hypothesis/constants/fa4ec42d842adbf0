@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_values\client.py
+# hypothesis_version: 6.151.10
+
+['.googleapis.com', '.mtls.googleapis.com', 'TagValuesClient', '_credentials', 'always', 'api_key', 'append', 'async', 'auto', 'credentials', 'credentialsInfo', 'credentialsType', 'false', 'folders/{folder}', 'get_cred_info', 'googleapis.com', 'grpc', 'grpc_asyncio', 'name', 'never', 'projects/{project}', 'resource', 'rest', 'serviceName', 'tag_value.name', 'true', 'universeDomain', 'universe_domain']

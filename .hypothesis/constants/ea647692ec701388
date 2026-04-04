@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\experiment_resources.py
+# hypothesis_version: 6.151.10
+
+[100, 'Experiment', '_ExperimentLoggable', 'experiment_name', 'metric', 'param', 'pd.DataFrame', 'run_name', 'run_type', 'state']

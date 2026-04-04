@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\pipeline_job_schedules.py
+# hypothesis_version: 6.151.10
+
+['PipelineJobSchedule', 'View Schedule:\n%s', 'allow_queueing', 'cron', 'display_name', 'encryption_spec', 'end_time', 'labels', 'max_run_count', 'parent', 'pipeline_job', 'pipeline_spec', 'reserved_ip_ranges', 'runtime_config', 'schedule', 'start_time', 'template_uri']

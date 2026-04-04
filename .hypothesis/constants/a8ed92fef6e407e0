@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\schema\google\artifact_schema.py
+# hypothesis_version: 6.151.10
+
+['ExperimentModel', 'MACRO_AVERAGE', 'MICRO_AVERAGE', 'accuracy', 'aggregationThreshold', 'aggregationType', 'auPrc', 'auRoc', 'confidenceMetrics', 'confusionMatrix', 'containerSpec', 'default', 'f1Score', 'frameworkName', 'frameworkVersion', 'google.VertexDataset', 'google.VertexModel', 'logLoss', 'meanAbsoluteError', 'modelClass', 'modelFile', 'precision', 'predictSchemata', 'rSquared', 'recall', 'resourceName', 'rootMeanSquaredError', 'tf.Module', 'xgb.Booster']

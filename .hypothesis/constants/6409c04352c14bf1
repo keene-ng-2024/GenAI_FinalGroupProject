@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_keys\async_client.py
+# hypothesis_version: 6.151.10
+
+['TagKeysAsyncClient', '_credentials', 'credentialsInfo', 'credentialsType', 'get_cred_info', 'grpc_asyncio', 'name', 'resource', 'serviceName', 'tag_key.name', 'universeDomain', 'universe_domain']

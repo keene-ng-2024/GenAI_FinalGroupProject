@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\types\projects.py
+# hypothesis_version: 6.151.10
+
+['CreateProjectRequest', 'DeleteProjectRequest', 'GetProjectRequest', 'ListProjectsRequest', 'ListProjectsResponse', 'MoveProjectMetadata', 'MoveProjectRequest', 'Project', 'UpdateProjectRequest']

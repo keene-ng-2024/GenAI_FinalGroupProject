@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\constants\pipeline.py
+# hypothesis_version: 6.151.10
+
+['create_time', 'display_name', 'end_time', 'labels', 'name', 'start_time', 'state', 'template_uri', 'update_time']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\_models.py
+# hypothesis_version: 6.151.10
+
+['.', 'cpu', 'data', 'default', 'dict', 'framework_name', 'framework_version', 'gpu', 'input_example', 'instance.yaml', 'list', 'load_method', 'model.bst', 'model.pkl', 'model_class', 'model_file', 'np.ndarray', 'numpy.ndarray', 'pandas.DataFrame', 'pd.DataFrame', 'r', 'rb', 'save_method', 'saved_model', 'sklearn', 'tensorflow', 'tensorflow.Module', 'tf.Module', 'type', 'w', 'wb', 'xgb.Booster', 'xgb.XGBModel', 'xgboost']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\model_evaluation\model_evaluation.py
+# hypothesis_version: 6.151.10
+
+['ModelEvaluation', 'evaluations', 'get_model_evaluation', 'metadata']

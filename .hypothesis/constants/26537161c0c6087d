@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_holds\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+['OK', 'create_tag_hold', 'delete_tag_hold', 'get_operation', 'grpc', 'grpc_asyncio', 'kind', 'list_tag_holds', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'status', 'utf-8']

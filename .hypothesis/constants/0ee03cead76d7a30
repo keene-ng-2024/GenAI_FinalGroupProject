@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_bindings\transports\__init__.py
+# hypothesis_version: 6.151.10
+
+['TagBindingsTransport', 'grpc', 'grpc_asyncio', 'rest']

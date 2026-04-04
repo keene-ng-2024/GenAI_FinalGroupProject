@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\model_evaluation\model_evaluation_job.py
+# hypothesis_version: 6.151.10
+
+['-', '1.0.0', '_ModelEvaluationJob', 'aiplatform.Model', 'automl-tabular', 'automl_tabular', 'base_uri', 'bigquery', 'classification', 'evaluation_metrics', 'feature-attribution', 'fpc-model-evaluation', 'jsonl', 'location', 'model_name', 'other', 'pipeline/', 'project', 'tag', 'target_field_name']

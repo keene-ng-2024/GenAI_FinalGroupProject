@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\notification.py
+# hypothesis_version: 6.151.10
+
+['JSON_API_V1', 'NONE', 'OBJECT_ARCHIVE', 'OBJECT_DELETE', 'OBJECT_FINALIZE', 'custom_attributes', 'etag', 'event_types', 'id', 'name', 'object_name_prefix', 'payload_format', 'project', 'selfLink', 'topic', 'userProject']

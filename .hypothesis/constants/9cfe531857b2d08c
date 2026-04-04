@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\storage\_signing.py
+# hypothesis_version: 6.151.10
+
+['%Y%m%d', '%Y%m%dT%H%M%SZ', '&', ',', ';', 'Authorization', 'Bearer ', 'Content-MD5', 'Content-Type', 'Content-type', 'Expires', 'GET', 'GOOG4-RSA-SHA256', 'GoogleAccessId', 'Host', 'POST', 'RESUMABLE', 'Signature', 'UNSIGNED-PAYLOAD', 'X-Goog-Algorithm', 'X-Goog-Credential', 'X-Goog-Date', 'X-Goog-Expires', 'X-Goog-SignedHeaders', '_Canonical', 'application/json', 'ascii', 'generation', 'headers', 'host', 'method', 'payload', 'query_parameters', 'resource', 'signedBlob', 'start', 'utf-8', 'x-goog-resumable', '{}:{}', '~']

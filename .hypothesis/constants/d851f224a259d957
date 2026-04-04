@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\pipeline_jobs.py
+# hypothesis_version: 6.151.10
+
+['%Y%m%d%H%M%S', '-', '.json', 'Job failed with:\n%s', 'Model A', 'Model B', 'PipelineJob', 'PipelineJobSchedule', '[^-0-9a-z]+', '[^-a-z0-9]', '_', 'cachingOptions', 'completed', 'components', 'dag', 'defaultPipelineRoot', 'delete_pipeline_job', 'deploymentConfig', 'displayName', 'display_name', 'enableCache', 'encryptionSpec', 'encryption_spec', 'gcsOutputDirectory', 'get_pipeline_job', 'labels', 'list_pipeline_jobs', 'name', 'pipeline', 'pipelineInfo', 'pipelineJobs', 'pipelineSpec', 'pipeline_job', 'pipeline_job_path', 'pipeline_spec', 'root', 'run', 'runtimeConfig', 'runtime_config', 'sdkVersion', 'tasks', 'template_uri', 'tfx']

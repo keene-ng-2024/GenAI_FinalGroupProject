@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_holds\transports\base.py
+# hypothesis_version: 6.151.10
+
+[':', ':443', 'TagHoldsTransport', '_ignore_credentials', 'with_gdch_audience']

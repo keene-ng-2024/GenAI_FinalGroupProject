@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\featurestore\featurestore.py
+# hypothesis_version: 6.151.10
+
+[1024, '-', 'Delete', 'Deleting', 'Featurestore', 'Serve', 'Serving', 'Update', 'Updating', '_', '`', '`, `', 'batch_serve', 'bigquery.Client', 'bigquery.Dataset', 'bq://', 'csv', 'delete_featurestore', 'deleted.', 'feature values', 'featurestore', 'featurestore_path', 'featurestores', 'get_featurestore', 'gs://', 'labels', 'list_featurestores', 'location', 'pd.DataFrame', 'project', 'read_instances', 'self', 'served', 'tfrecord', 'updated']

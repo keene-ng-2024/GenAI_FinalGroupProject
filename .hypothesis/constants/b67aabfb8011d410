@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\schema\utils.py
+# hypothesis_version: 6.151.10
+
+['accuracy', 'annotationSpecs', 'args', 'command', 'confidenceThreshold', 'confusionMatrix', 'displayName', 'env', 'f1Score', 'f1ScoreAt1', 'falseNegativeCount', 'falsePositiveCount', 'falsePositiveRate', 'falsePositiveRateAt1', 'healthRoute', 'id', 'imageUri', 'instanceSchemaUri', 'location', 'maxPredictions', 'parametersSchemaUri', 'ports', 'precision', 'precisionAt1', 'predictRoute', 'predictionSchemaUri', 'recall', 'recallAt1', 'rows', 'trueNegativeCount', 'truePositiveCount']

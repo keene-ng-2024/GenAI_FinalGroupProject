@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\folders\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+[0.1, 1.3, 60.0, 'OK', 'create_folder', 'delete_folder', 'get_folder', 'get_iam_policy', 'get_operation', 'grpc', 'grpc_asyncio', 'kind', 'list_folders', 'metadata', 'move_folder', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'search_folders', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'undelete_folder', 'update_folder', 'utf-8']

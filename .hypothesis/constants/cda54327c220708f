@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\experiment_run_resource.py
+# hypothesis_version: 6.151.10
+
+['ExperimentRun', 'annotationSpecs', 'confidenceMetrics', 'confidenceThreshold', 'confusionMatrix', 'default', 'displayName', 'display_name', 'execution_name', 'falsePositiveRate', 'fpr', 'id', 'labels', 'list', 'matrix', 'np.ndarray', 'pd.DataFrame', 'recall', 'resourceName', 'resource_name', 'rows', 'step', 'tf.Module', 'threshold', 'tpr', 'wall_time', 'xgb.Booster']

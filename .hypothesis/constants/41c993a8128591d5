@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\metadata\metadata.py
+# hypothesis_version: 6.151.10
+
+['.', 'Default Tensorboard ', 'default', 'end_run', 'is_default=true', 'log', 'log_metrics', 'log_model', 'log_params', 'metric', 'mlflow', 'np.ndarray', 'param', 'pd.DataFrame', 'pipeline', 'run_name', 'tf.Module', 'vertex-mlflow-plugin', 'xgb.Booster']

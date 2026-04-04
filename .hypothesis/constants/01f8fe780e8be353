@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\utils\__init__.py
+# hypothesis_version: 6.151.10
+
+[128, '%Y-%m-%d %H:%M:%S.%f', '%Y-%m-%d-%H-%M-%S', '([A-Z]+)', '-', '/', ':', 'SPECIFIC_RESERVATION', '^[\\w-]+$', '_\\1', 'aiplatform', 'gs://', 'index', 'indexes', 'location', 'milliseconds', 'project', 's', 'time_series', 'transport']

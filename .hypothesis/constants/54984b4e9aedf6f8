@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\folders\transports\rest_base.py
+# hypothesis_version: 6.151.10
+
+['$alt', '*', '/v3/folders', '/v3/folders:search', '/v3/{name=folders/*}', 'body', 'delete', 'folder', 'get', 'https', 'method', 'parent', 'patch', 'post', 'query_params', 'scheme', 'updateMask', 'uri']

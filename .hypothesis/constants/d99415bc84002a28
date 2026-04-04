@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\tensorboard\tensorboard_resource.py
+# hypothesis_version: 6.151.10
+
+['SCALAR', 'Tensorboard', 'TensorboardRun', 'Update', 'Updating', 'delete_tensorboard', 'description', 'display_name', 'encryption_spec', 'experiment', 'experiments', 'get_tensorboard', 'get_tensorboard_run', 'is_default', 'labels', 'list_tensorboards', 'run', 'runs', 'scalars', 'tb', 'tb experiment', 'tb_run', 'tb_time_series', 'tensorboard', 'tensorboard_path', 'tensorboard_run_path', 'tensorboards', 'timeSeries', 'updated']

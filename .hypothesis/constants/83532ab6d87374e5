@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\gapic\schema\__init__.py
+# hypothesis_version: 6.151.10
+
+['predict', 'predict_v1beta1', 'trainingjob', 'trainingjob_v1beta1']

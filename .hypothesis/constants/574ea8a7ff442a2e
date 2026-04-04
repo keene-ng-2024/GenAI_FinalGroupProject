@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\matching_engine\_protos\match_service_pb2_grpc.py
+# hypothesis_version: 6.151.10
+
+['BatchGetEmbeddings', 'BatchMatch', 'Match']

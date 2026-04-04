@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\featurestore\feature.py
+# hypothesis_version: 6.151.10
+
+['Feature', 'Updating', 'delete_feature', 'description', 'entity_type', 'feature', 'feature_path', 'features', 'featurestore', 'get_feature', 'labels', 'list_features', 'location', 'page_size', 'parse_feature_path', 'project', 'query']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\projects\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'create_project', 'delete_project', 'get_iam_policy', 'get_operation', 'get_project', 'grpc', 'list_projects', 'metadata', 'move_project', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'search_projects', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'undelete_project', 'update_project', 'utf-8']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\utils\featurestore_utils.py
+# hypothesis_version: 6.151.10
+
+['$', 'BOOL', 'BOOL_ARRAY', 'BYTES', 'DOUBLE', 'DOUBLE_ARRAY', 'FLOAT64', 'INT64', 'INT64_ARRAY', 'REPEATED', 'STRING', 'STRING_ARRAY', '^', '`, `', 'arrival_timestamp', 'avro', 'csv', 'entity_id', 'feature_timestamp', 'field_type', 'mode', 'tfrecord']

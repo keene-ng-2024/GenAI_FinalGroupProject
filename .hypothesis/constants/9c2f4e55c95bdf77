@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform\utils\worker_spec_utils.py
+# hypothesis_version: 6.151.10
+
+[100, 'ANY_RESERVATION', 'NO_RESERVATION', 'SPECIFIC_RESERVATION', 'accelerator_count', 'accelerator_type', 'boot_disk_size_gb', 'boot_disk_type', 'chief_spec', 'disk_spec', 'evaluator_spec', 'key', 'machine_spec', 'machine_type', 'n1-standard-4', 'pd-ssd', 'replica_count', 'reservation_affinity', 'server_spec', 'tpu_topology', 'values', 'worker_spec']

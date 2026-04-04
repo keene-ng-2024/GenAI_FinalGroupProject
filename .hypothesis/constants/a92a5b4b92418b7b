@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\organizations\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'Content-Type', 'GetIamPolicy', 'GetOperation', 'GetOrganization', 'SearchOrganizations', 'SetIamPolicy', 'TestIamPermissions', 'application/json', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', '{host}{uri}']

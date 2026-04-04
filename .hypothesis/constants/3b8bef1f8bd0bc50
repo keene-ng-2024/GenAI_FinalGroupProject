@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\resourcemanager_v3\services\tag_keys\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'Content-Type', 'CreateTagKey', 'DeleteTagKey', 'GetIamPolicy', 'GetNamespacedTagKey', 'GetOperation', 'GetTagKey', 'ListTagKeys', 'SetIamPolicy', 'TagKeysRestTransport', 'TestIamPermissions', 'UpdateTagKey', 'application/json', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v3', '{host}{uri}']
