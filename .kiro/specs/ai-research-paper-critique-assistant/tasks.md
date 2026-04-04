@@ -48,7 +48,7 @@
 
 ### 3.1 Main Orchestrator
 
-- [-] 3.1.1 Create `src/agents/state.py` with `AgentState` TypedDict and state management (FR-1.1.2)
+- [x] 3.1.1 Create `src/agents/state.py` with `AgentState` TypedDict and state management (FR-1.1.2)
 - [ ] 3.1.2 Implement `run_pipeline(paper_id, paper_text)` function as main entry point (IR-4.3.1)
 - [ ] 3.1.3 Implement iterative debate loop with configurable max_rounds=5 (FR-1.3.2)
 - [ ] 3.1.4 Implement early stopping detection with configurable phrases (FR-1.3.3, FR-1.3.4)
