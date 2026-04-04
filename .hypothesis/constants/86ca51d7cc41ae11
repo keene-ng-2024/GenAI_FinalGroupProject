@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\vizier_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'AddTrialMeasurement', 'CancelOperation', 'CompleteTrial', 'Content-Type', 'CreateStudy', 'CreateTrial', 'DeleteOperation', 'DeleteStudy', 'DeleteTrial', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'GetStudy', 'GetTrial', 'ListLocations', 'ListOperations', 'ListOptimalTrials', 'ListStudies', 'ListTrials', 'LookupStudy', 'SetIamPolicy', 'StopTrial', 'SuggestTrials', 'TestIamPermissions', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1', '{host}{uri}']

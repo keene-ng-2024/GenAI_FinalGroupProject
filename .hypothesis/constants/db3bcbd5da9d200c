@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\vertex_rag_data_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_rag_corpus', 'create_rag_metadata', 'delete_operation', 'delete_rag_corpus', 'delete_rag_file', 'delete_rag_metadata', 'get_iam_policy', 'get_location', 'get_operation', 'get_rag_corpus', 'get_rag_data_schema', 'get_rag_file', 'get_rag_metadata', 'grpc', 'import_rag_files', 'list_locations', 'list_operations', 'list_rag_corpora', 'list_rag_files', 'list_rag_metadata', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_rag_corpus', 'update_rag_metadata', 'upload_rag_file', 'utf-8', 'wait_operation']

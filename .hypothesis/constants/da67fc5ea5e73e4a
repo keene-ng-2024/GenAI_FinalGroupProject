@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\vertex_rag_service\async_client.py
+# hypothesis_version: 6.151.10
+
+['_credentials', 'credentialsInfo', 'credentialsType', 'get_cred_info', 'grpc_asyncio', 'name', 'parent', 'resource', 'serviceName', 'universeDomain', 'universe_domain']

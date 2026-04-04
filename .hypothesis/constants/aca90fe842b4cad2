@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\schedule_service\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_schedule', 'delete_operation', 'delete_schedule', 'get_iam_policy', 'get_location', 'get_operation', 'get_schedule', 'grpc', 'grpc_asyncio', 'kind', 'list_locations', 'list_operations', 'list_schedules', 'metadata', 'pause_schedule', 'payload', 'request', 'requestMethod', 'response', 'resume_schedule', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_schedule', 'utf-8', 'wait_operation']

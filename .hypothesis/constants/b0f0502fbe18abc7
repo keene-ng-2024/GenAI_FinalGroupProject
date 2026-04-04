@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\types\content.py
+# hypothesis_version: 6.151.10
+
+['Blob', 'Candidate', 'Citation', 'CitationMetadata', 'Content', 'FileData', 'GenerationConfig', 'GroundingChunk', 'GroundingMetadata', 'GroundingSupport', 'HarmCategory', 'ImageConfig', 'LogprobsResult', 'Modality', 'ModalityTokenCount', 'ModelArmorConfig', 'Part', 'PrebuiltVoiceConfig', 'RetrievalMetadata', 'SafetyRating', 'SafetySetting', 'SearchEntryPoint', 'Segment', 'SpeakerVoiceConfig', 'SpeechConfig', 'UrlContextMetadata', 'UrlMetadata', 'VideoMetadata', 'VoiceConfig', 'chunk_type', 'context_details', 'data', 'metadata', 'routing_config', 'value', 'voice_config']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\featurestore_service\client.py
+# hypothesis_version: 6.151.10
+
+['.googleapis.com', '.mtls.googleapis.com', '_credentials', 'always', 'api_key', 'append', 'async', 'auto', 'credentials', 'credentialsInfo', 'credentialsType', 'entity_type', 'entity_type.name', 'false', 'feature.name', 'featurestore', 'featurestore.name', 'folders/{folder}', 'get_cred_info', 'googleapis.com', 'grpc', 'grpc_asyncio', 'location', 'name', 'never', 'parent', 'projects/{project}', 'resource', 'rest', 'rest_asyncio', 'serviceName', 'true', 'universeDomain', 'universe_domain']

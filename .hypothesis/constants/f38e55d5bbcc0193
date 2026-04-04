@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\model_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'Content-Type', 'CopyModel', 'DeleteModel', 'DeleteModelVersion', 'DeleteOperation', 'ExportModel', 'GetIamPolicy', 'GetLocation', 'GetModel', 'GetModelEvaluation', 'GetOperation', 'ListLocations', 'ListModelEvaluations', 'ListModelVersions', 'ListModels', 'ListOperations', 'MergeVersionAliases', 'RecommendSpec', 'SetIamPolicy', 'TestIamPermissions', 'UpdateModel', 'UploadModel', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1beta1', '{host}{uri}']

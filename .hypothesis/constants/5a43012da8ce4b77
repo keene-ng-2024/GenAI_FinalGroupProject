@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\session_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'AppendEvent', 'CancelOperation', 'Content-Type', 'CreateSession', 'DeleteOperation', 'DeleteSession', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'GetSession', 'ListEvents', 'ListLocations', 'ListOperations', 'ListSessions', 'SetIamPolicy', 'TestIamPermissions', 'UpdateSession', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1', '{host}{uri}']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\example_store_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_example_store', 'delete_example_store', 'delete_operation', 'fetch_examples', 'get_example_store', 'get_iam_policy', 'get_location', 'get_operation', 'grpc', 'list_example_stores', 'list_locations', 'list_operations', 'metadata', 'payload', 'remove_examples', 'request', 'requestMethod', 'response', 'rpcName', 'search_examples', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_example_store', 'upsert_examples', 'utf-8', 'wait_operation']

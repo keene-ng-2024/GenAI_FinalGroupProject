@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\gen_ai_cache_service\transports\rest_asyncio.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'Content-Type', 'CreateCachedContent', 'DeleteCachedContent', 'DeleteOperation', 'GetCachedContent', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'ListCachedContents', 'ListLocations', 'ListOperations', 'OK', 'SetIamPolicy', 'TestIamPermissions', 'UpdateCachedContent', 'WaitOperation', 'application/json', 'headers', 'httpRequest', 'httpResponse', 'https', 'kind', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest_asyncio', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', '{host}{uri}']

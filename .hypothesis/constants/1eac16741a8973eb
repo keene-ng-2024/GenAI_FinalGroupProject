@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\model_garden_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'delete_operation', 'deploy', 'get_iam_policy', 'get_location', 'get_operation', 'get_publisher_model', 'grpc', 'list_locations', 'list_operations', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'utf-8', 'wait_operation']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\job_service\transports\rest_base.py
+# hypothesis_version: 6.151.10
+
+['$alt', '*', 'batch_prediction_job', 'body', 'custom_job', 'data_labeling_job', 'delete', 'get', 'https', 'method', 'nas_job', 'patch', 'post', 'query_params', 'scheme', 'updateMask', 'uri']

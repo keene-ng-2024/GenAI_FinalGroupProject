@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\tensorboard_service\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_tensorboard', 'delete_operation', 'delete_tensorboard', 'get_iam_policy', 'get_location', 'get_operation', 'get_tensorboard', 'get_tensorboard_run', 'grpc', 'grpc_asyncio', 'kind', 'list_locations', 'list_operations', 'list_tensorboards', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_tensorboard', 'utf-8', 'wait_operation']

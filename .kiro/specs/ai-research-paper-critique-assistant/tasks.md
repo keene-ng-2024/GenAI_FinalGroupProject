@@ -73,20 +73,20 @@
 
 ### 4.1 Unit Tests
 
-- [ ] 4.1.1 Create `tests/test_agents.py` with agent role tests using mock LLM responses (NFR-2.4.1)
-- [ ] 4.1.2 Create `tests/test_grounding_verifier.py` with grounding tests (NFR-2.4.1)
-- [ ] 4.1.3 Create `tests/test_orchestrator.py` with orchestration tests (NFR-2.4.1)
-- [ ] 4.1.4 Create `tests/test_data_models.py` with data model validation tests (NFR-2.4.1)
-- [ ] 4.1.5 Add mock LLM responses for all agent roles (NFR-2.4.1)
+- [x] 4.1.1 Create `tests/test_agents.py` with agent role tests using mock LLM responses (NFR-2.4.1)
+- [x] 4.1.2 Create `tests/test_grounding_verifier.py` with grounding tests (NFR-2.4.1)
+- [x] 4.1.3 Create `tests/test_orchestrator.py` with orchestration tests (NFR-2.4.1)
+- [x] 4.1.4 Create `tests/test_data_models.py` with data model validation tests (NFR-2.4.1)
+- [x] 4.1.5 Add mock LLM responses for all agent roles (NFR-2.4.1)
 
 ### 4.2 Property-Based Tests
 
-- [ ] 4.2.1 Create `tests/test_properties.py` with property-based tests (NFR-2.4.2)
-- [ ] 4.2.2 Test transcript length invariant: `|transcript| = 3 + 2 * rounds` (Correctness Property 1)
-- [ ] 4.2.3 Test latency consistency: `latency_ms = latency_seconds * 1000` (Correctness Property 2)
-- [ ] 4.2.4 Test grounding score bounds: `0.0 <= score <= 1.0` (Correctness Property 3)
-- [ ] 4.2.5 Test round count bounds: `0 <= rounds <= max_rounds` (Correctness Property 4)
-- [ ] 4.2.6 Test output schema compliance with Pydantic validation (Correctness Property 5)
+- [x] 4.2.1 Create `tests/test_properties.py` with property-based tests (NFR-2.4.2)
+- [x] 4.2.2 Test transcript length invariant: `|transcript| = 3 + 2 * rounds` (Correctness Property 1)
+- [x] 4.2.3 Test latency consistency: `latency_ms = latency_seconds * 1000` (Correctness Property 2)
+- [x] 4.2.4 Test grounding score bounds: `0.0 <= score <= 1.0` (Correctness Property 3)
+- [x] 4.2.5 Test round count bounds: `0 <= rounds <= max_rounds` (Correctness Property 4)
+- [x] 4.2.6 Test output schema compliance with Pydantic validation (Correctness Property 5)
 
 ### 4.3 Integration Tests
 
@@ -148,7 +148,7 @@
 - [x] 7.1.2 Configure project and location in config.yaml (IR-4.1.1)
 - [x] 7.1.3 Install required packages: `google-cloud-aiplatform>=1.143.0`, `langchain-google-vertexai>=3.2.2`, `langgraph>=1.2.6`, `pydantic>=2.0` (IR-4.1.1)
 - [x] 7.1.4 Set up environment variables: `GOOGLE_APPLICATION_CREDENTIALS` (IR-4.1.1)
-- [ ] 7.1.5 Test Vertex AI connection with sample paper (IR-4.1.1)
+- [x] 7.1.5 Test Vertex AI connection with sample paper (IR-4.1.1)
 
 ### 7.2 CI/CD
 

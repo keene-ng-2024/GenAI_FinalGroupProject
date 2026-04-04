@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\reasoning_engine_execution_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'Content-Type', 'DeleteOperation', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'ListLocations', 'ListOperations', 'QueryReasoningEngine', 'SetIamPolicy', 'TestIamPermissions', 'WaitOperation', 'application/json', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', '{host}{uri}']

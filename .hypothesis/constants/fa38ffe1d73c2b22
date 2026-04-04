@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\specialist_pool_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'Content-Type', 'CreateSpecialistPool', 'DeleteOperation', 'DeleteSpecialistPool', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'GetSpecialistPool', 'ListLocations', 'ListOperations', 'ListSpecialistPools', 'SetIamPolicy', 'TestIamPermissions', 'UpdateSpecialistPool', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1', '{host}{uri}']

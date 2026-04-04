@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\iam\v1\iam_policy_pb2.py
+# hypothesis_version: 6.151.10
+
+[b'\x82\xd3\xe4\x93\x02#"\x1e/v1/{resource=**}:getIamPolicy:\x01*', b'\x82\xd3\xe4\x93\x02#"\x1e/v1/{resource=**}:setIamPolicy:\x01*', b'\x82\xd3\xe4\x93\x02)"$/v1/{resource=**}:testIamPermissions:\x01*', b'\xcaA\x1biam-meta-api.googleapis.com', b'\xe0A\x02', b'\xe0A\x02\xfaA\x03\n\x01*', 256, 399, 401, 501, 503, 585, 587, 636, 639, 1075, 'DESCRIPTOR', 'GetIamPolicy', 'SetIamPolicy', 'TestIamPermissions', '_GETIAMPOLICYREQUEST', '_IAMPOLICY', '_SETIAMPOLICYREQUEST', 'permissions', 'policy', 'resource']

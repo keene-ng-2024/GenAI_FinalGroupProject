@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\schedule_service\transports\rest_asyncio.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'Content-Type', 'CreateSchedule', 'DeleteOperation', 'DeleteSchedule', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'GetSchedule', 'ListLocations', 'ListOperations', 'ListSchedules', 'OK', 'PauseSchedule', 'ResumeSchedule', 'SetIamPolicy', 'TestIamPermissions', 'UpdateSchedule', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'kind', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest_asyncio', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1beta1', '{host}{uri}']

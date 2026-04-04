@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\model_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'copy_model', 'delete_model', 'delete_model_version', 'delete_operation', 'export_model', 'get_iam_policy', 'get_location', 'get_model', 'get_model_evaluation', 'get_operation', 'grpc', 'list_locations', 'list_model_versions', 'list_models', 'list_operations', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_model', 'upload_model', 'utf-8', 'wait_operation']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\prediction_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelOperation', 'ChatCompletions', 'Content-Type', 'CountTokens', 'DeleteOperation', 'DirectPredict', 'DirectRawPredict', 'EmbedContent', 'Explain', 'GenerateContent', 'GetIamPolicy', 'GetLocation', 'GetOperation', 'ListLocations', 'ListOperations', 'Predict', 'RawPredict', 'SetIamPolicy', 'StreamRawPredict', 'TestIamPermissions', 'WaitOperation', 'application/json', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', '{host}{uri}']

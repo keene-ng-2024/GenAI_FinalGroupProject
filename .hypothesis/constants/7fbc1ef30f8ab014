@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\types\vertex_rag_data.py
+# hypothesis_version: 6.151.10
+
+['CorpusStatus', 'FileStatus', 'ImportRagFilesConfig', 'RagChunk', 'RagCorpus', 'RagEngineConfig', 'RagFile', 'RagFileParsingConfig', 'RagManagedDbConfig', 'RagVectorDbConfig', 'UploadRagFileConfig', 'VertexAiSearchConfig', 'backend_config', 'chunking_config', 'import_result_sink', 'import_source', 'model_config', 'parser', 'partial_failure_sink', 'rag_file_source', 'retrieval_strategy', 'tier', 'vector_db']

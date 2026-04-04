@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\featurestore_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_entity_type', 'create_feature', 'create_featurestore', 'delete_entity_type', 'delete_feature', 'delete_featurestore', 'delete_operation', 'get_entity_type', 'get_feature', 'get_featurestore', 'get_iam_policy', 'get_location', 'get_operation', 'grpc', 'list_entity_types', 'list_features', 'list_featurestores', 'list_locations', 'list_operations', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'search_features', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_entity_type', 'update_feature', 'update_featurestore', 'utf-8', 'wait_operation']

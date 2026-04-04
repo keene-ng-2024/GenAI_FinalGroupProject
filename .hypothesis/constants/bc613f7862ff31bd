@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\types\featurestore_service.py
+# hypothesis_version: 6.151.10
+
+['CreateFeatureRequest', 'DeleteFeatureRequest', 'DeleteOption', 'EntityIdSelector', 'EntityIdsSource', 'GetEntityTypeRequest', 'GetFeatureRequest', 'ListFeaturesRequest', 'ListFeaturesResponse', 'UpdateFeatureRequest', 'destination', 'feature_time_source', 'mode', 'read_option', 'response', 'source']

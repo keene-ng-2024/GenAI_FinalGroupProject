@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\types\tuning_job.py
+# hypothesis_version: 6.151.10
+
+['PreTunedModel', 'SupervisedTuningSpec', 'TunedModel', 'TunedModelCheckpoint', 'TunedModelRef', 'TuningDataStats', 'TuningJob', 'source_model', 'tuned_model_ref', 'tuning_data_stats', 'tuning_spec']

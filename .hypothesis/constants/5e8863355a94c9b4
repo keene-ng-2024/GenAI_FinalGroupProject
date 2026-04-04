@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\gen_ai_tuning_service\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'cancel_tuning_job', 'create_tuning_job', 'delete_operation', 'get_iam_policy', 'get_location', 'get_operation', 'get_tuning_job', 'grpc', 'grpc_asyncio', 'kind', 'list_locations', 'list_operations', 'list_tuning_jobs', 'metadata', 'payload', 'rebase_tuned_model', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'utf-8', 'wait_operation']

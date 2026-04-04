@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\prediction_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'delete_operation', 'direct_predict', 'direct_raw_predict', 'embed_content', 'explain', 'generate_content', 'get_iam_policy', 'get_location', 'get_operation', 'grpc', 'list_locations', 'list_operations', 'metadata', 'payload', 'predict', 'raw_predict', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'stream_raw_predict', 'streaming_predict', 'test_iam_permissions', 'utf-8', 'wait_operation']

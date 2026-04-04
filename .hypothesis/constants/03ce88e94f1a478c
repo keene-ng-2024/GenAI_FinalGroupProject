@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\notebook_service\client.py
+# hypothesis_version: 6.151.10
+
+['.googleapis.com', '.mtls.googleapis.com', '_credentials', 'always', 'api_key', 'append', 'async', 'auto', 'credentials', 'credentialsInfo', 'credentialsType', 'false', 'folders/{folder}', 'get_cred_info', 'googleapis.com', 'grpc', 'grpc_asyncio', 'name', 'never', 'parent', 'projects/{project}', 'resource', 'rest', 'rest_asyncio', 'serviceName', 'true', 'universeDomain', 'universe_domain']

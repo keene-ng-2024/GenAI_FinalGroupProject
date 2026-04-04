@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\types\extension.py
+# hypothesis_version: 6.151.10
+
+[101, 'AuthConfig', 'AuthType', 'Extension', 'ExtensionManifest', 'ExtensionOperation', 'HttpElementLocation', 'RuntimeConfig', 'api_spec', 'auth_config', 'oauth_config', 'oidc_config']

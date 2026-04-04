@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\job_service\transports\rest.py
+# hypothesis_version: 6.151.10
+
+[400, 'CancelCustomJob', 'CancelNasJob', 'CancelOperation', 'Content-Type', 'CreateCustomJob', 'CreateNasJob', 'DeleteCustomJob', 'DeleteNasJob', 'DeleteOperation', 'GetCustomJob', 'GetDataLabelingJob', 'GetIamPolicy', 'GetLocation', 'GetNasJob', 'GetNasTrialDetail', 'GetOperation', 'ListCustomJobs', 'ListDataLabelingJobs', 'ListLocations', 'ListNasJobs', 'ListNasTrialDetails', 'ListOperations', 'SetIamPolicy', 'TestIamPermissions', 'WaitOperation', 'application/json', 'delete', 'get', 'headers', 'httpRequest', 'httpResponse', 'https', 'metadata', 'method', 'payload', 'post', 'requestMethod', 'requestUrl', 'rest', 'rpcName', 'serviceName', 'status', 'uri', 'utf-8', 'v1beta1', '{host}{uri}']

@@ -23,14 +23,12 @@ from agents.state import (
     update_transcript,
     update_token_usage,
     increment_rounds,
-    should_early_stop,
     get_latency_seconds,
 )
 from agents.vertex_client import (
     get_vertex_ai_client,
 )
 from agents.personas import AgentRole, BaseAgent
-from agents.agents import build_agents
 from agents.grounding_verifier import verify_all_grounding
 
 
@@ -221,7 +219,7 @@ def run_pipeline(
                 "## Claimed Contributions\n\n"
                 "Be factual and concise. Include specific numbers from experiments."
             ),
-            model=vertex_config.get("reader_model", "gemini-1.5-flash"),
+            model=vertex_config.get("reader_model", "gemini-2.5-flash-lite"),
             config=config,
         ),
         "critic": VertexAgent(
@@ -235,7 +233,7 @@ def run_pipeline(
                 "(c) what evidence from the paper supports your concern. "
                 "Be specific and actionable."
             ),
-            model=vertex_config.get("critic_model", "gemini-1.5-pro"),
+            model=vertex_config.get("critic_model", "gemini-2.5-flash"),
             config=config,
         ),
         "auditor": VertexAgent(
@@ -249,7 +247,7 @@ def run_pipeline(
                 "Also highlight genuine issues the Critic may have missed. "
                 "Be constructive but demanding."
             ),
-            model=vertex_config.get("auditor_model", "gemini-1.5-flash"),
+            model=vertex_config.get("auditor_model", "gemini-2.5-flash-lite"),
             config=config,
         ),
         "summarizer": VertexAgent(
@@ -283,7 +281,7 @@ def run_pipeline(
                 "- Base scores on the reviewer score context provided and the debate.\n"
                 "- Output nothing except the JSON object. No markdown fences, no commentary."
             ),
-            model=vertex_config.get("summariser_model", "gemini-1.5-pro"),
+            model=vertex_config.get("summariser_model", "gemini-2.5-flash"),
             config=config,
         ),
     }
@@ -324,8 +322,9 @@ def run_pipeline(
         
         rounds_done = round_num
         
-        # Check early stopping
-        if should_early_stop(audit_feedback, early_stop_phrases):
+        # Check early stopping (inline to avoid state.py signature mismatch)
+        feedback_lower = audit_feedback.lower()
+        if any(phrase in feedback_lower for phrase in early_stop_phrases):
             print(f"  [STOP] Auditor satisfied after round {round_num}.")
             break
         

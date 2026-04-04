@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\types\dataset_service.py
+# hypothesis_version: 6.151.10
+
+['AssembleDataRequest', 'AssembleDataResponse', 'AssessDataRequest', 'AssessDataResponse', 'CreateDatasetRequest', 'DataItemView', 'DeleteDatasetRequest', 'ExportDataRequest', 'ExportDataResponse', 'GeminiExample', 'GeminiTemplateConfig', 'GetDatasetRequest', 'ImportDataRequest', 'ImportDataResponse', 'ListDataItemsRequest', 'ListDatasetsRequest', 'ListDatasetsResponse', 'UpdateDatasetRequest', 'assessment_config', 'assessment_result', 'order', 'read_config']

@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1beta1\services\vertex_rag_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'ask_contexts', 'augment_prompt', 'cancel_operation', 'corroborate_content', 'delete_operation', 'get_iam_policy', 'get_location', 'get_operation', 'grpc', 'list_locations', 'list_operations', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'retrieve_contexts', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'utf-8', 'wait_operation']

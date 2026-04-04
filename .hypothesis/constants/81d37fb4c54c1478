@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\vizier_service\transports\grpc.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'complete_trial', 'create_study', 'create_trial', 'delete_operation', 'delete_study', 'delete_trial', 'get_iam_policy', 'get_location', 'get_operation', 'get_study', 'get_trial', 'grpc', 'list_locations', 'list_operations', 'list_optimal_trials', 'list_studies', 'list_trials', 'lookup_study', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'stop_trial', 'suggest_trials', 'test_iam_permissions', 'utf-8', 'wait_operation']

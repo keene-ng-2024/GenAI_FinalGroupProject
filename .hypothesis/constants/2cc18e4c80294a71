@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\metadata_service\transports\rest_base.py
+# hypothesis_version: 6.151.10
+
+['$alt', '*', 'artifact', 'body', 'context', 'delete', 'execution', 'get', 'https', 'metadata_schema', 'metadata_store', 'method', 'patch', 'post', 'query_params', 'scheme', 'uri']

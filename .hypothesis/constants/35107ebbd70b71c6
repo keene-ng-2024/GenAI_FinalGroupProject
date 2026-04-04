@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\types\tool.py
+# hypothesis_version: 6.151.10
+
+[100, 'CodeExecutionResult', 'EnterpriseWebSearch', 'ExecutableCode', 'FunctionCall', 'FunctionDeclaration', 'FunctionResponse', 'FunctionResponseBlob', 'FunctionResponsePart', 'GoogleMaps', 'PartialArg', 'RagRetrievalConfig', 'Retrieval', 'RetrievalConfig', 'Tool', 'ToolConfig', 'UrlContext', 'VertexAISearch', 'VertexRagStore', 'data', 'delta', 'ranking_config', 'source', 'vector_db_threshold']

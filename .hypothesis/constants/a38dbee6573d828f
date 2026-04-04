@@ -1,0 +1,4 @@
+# file: C:\Users\bryan\AppData\Roaming\Python\Python312\site-packages\google\cloud\aiplatform_v1\services\feature_registry_service\transports\grpc_asyncio.py
+# hypothesis_version: 6.151.10
+
+['OK', 'cancel_operation', 'create_feature', 'create_feature_group', 'delete_feature', 'delete_feature_group', 'delete_operation', 'get_feature', 'get_feature_group', 'get_iam_policy', 'get_location', 'get_operation', 'grpc', 'grpc_asyncio', 'kind', 'list_feature_groups', 'list_features', 'list_locations', 'list_operations', 'metadata', 'payload', 'request', 'requestMethod', 'response', 'rpcName', 'serviceName', 'set_iam_policy', 'status', 'test_iam_permissions', 'update_feature', 'update_feature_group', 'utf-8', 'wait_operation']
