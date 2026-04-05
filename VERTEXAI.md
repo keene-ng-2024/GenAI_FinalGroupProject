@@ -15,7 +15,7 @@ Compare multiple agentic platforms building the same multi-agent paper critique 
 |--------|----------|--------|--------|
 | Baseline | Custom Python (direct API) | GPT-4o | Done, F1=0.331 |
 | n8n | n8n workflow automation | GPT-4o-mini / GPT-4o | Done, F1=0.382 |
-| Vertex AI | Google Cloud Vertex AI | Gemini 2.5 Flash / Flash-Lite | Running (40/100 done), partial F1=0.420 |
+| Vertex AI | Google Cloud Vertex AI | Gemini 2.5 Flash / Flash-Lite | Running (74/100 done), partial F1=0.366 |
 
 ## Key Architecture
 
@@ -125,14 +125,15 @@ Output per paper is saved as JSON with:
 - **Gemini 2.5 Flash thinking tokens** — `gemini-2.5-flash` uses internal reasoning tokens that count toward billing but aren't in the output. Actual cost is higher than token counts suggest.
 - **Paper_0043** — Summariser returned unparseable output (0 weakness points). Rerun after pipeline completes.
 
-## Partial Results (40/100 papers)
+## Partial Results (74/100 papers)
 
 | Metric | Baseline (GPT-4o) | n8n (GPT-4o) | Vertex AI (Gemini 2.5) |
 |--------|-------------------|--------------|------------------------|
-| Precision | 0.463 | 0.386 | **0.507** |
-| Recall | 0.272 | 0.401 | **0.377** |
-| F1 | 0.331 | 0.382 | **0.420** |
-| Latency | ~9s | ~44s | ~257s |
+| Precision | 0.463 | 0.386 | **0.441** |
+| Recall | 0.272 | 0.401 | 0.329 |
+| F1 | 0.331 | 0.382 | 0.366 |
+| Latency | ~9s | ~44s | ~222s |
+| Papers | 100 | 99 | 74 (running) |
 
 Vertex AI leads on precision and F1. The multi-round debate produces fewer but higher-quality critique points compared to single-shot approaches.
 
