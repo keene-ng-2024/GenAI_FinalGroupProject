@@ -251,6 +251,31 @@
       ],
       "latency_seconds": 271.47
     },
+    "paper_0012": {
+      "precision": 0.875,
+      "recall": 0.5385,
+      "f1": 0.6667,
+      "n_generated": 8,
+      "n_ground_truth": 13,
+      "covered_gt": [
+        "point_001",
+        "point_003",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_013"
+      ],
+      "uncovered_gt": [
+        "point_002",
+        "point_004",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 221.9
+    },
     "paper_0013": {
       "precision": 0.8889,
       "recall": 0.6923,
@@ -448,6 +473,30 @@
       ],
       "latency_seconds": 224.7
     },
+    "paper_0021": {
+      "precision": 0.375,
+      "recall": 0.25,
+      "f1": 0.3,
+      "n_generated": 8,
+      "n_ground_truth": 12,
+      "covered_gt": [
+        "point_002",
+        "point_007",
+        "point_009"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_008",
+        "point_010",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 402.57
+    },
     "paper_0022": {
       "precision": 0.8333,
       "recall": 0.6154,
@@ -473,6 +522,29 @@
       ],
       "latency_seconds": 104.78
     },
+    "paper_0023": {
+      "precision": 0.2857,
+      "recall": 0.1818,
+      "f1": 0.2222,
+      "n_generated": 7,
+      "n_ground_truth": 11,
+      "covered_gt": [
+        "point_005",
+        "point_006"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011"
+      ],
+      "latency_seconds": 182.07
+    },
     "paper_0024": {
       "precision": 0.1429,
       "recall": 0.1111,
@@ -493,6 +565,55 @@
         "point_009"
       ],
       "latency_seconds": 228.94
+    },
+    "paper_0025": {
+      "precision": 0.3333,
+      "recall": 0.0769,
+      "f1": 0.125,
+      "n_generated": 6,
+      "n_ground_truth": 13,
+      "covered_gt": [
+        "point_010"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_011",
+        "point_012",
+        "point_013"
+      ],
+      "latency_seconds": 106.29
+    },
+    "paper_0026": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 13,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013"
+      ],
+      "latency_seconds": 260.82
     },
     "paper_0027": {
       "precision": 0.4286,
@@ -518,6 +639,147 @@
         "point_013"
       ],
       "latency_seconds": 191.4
+    },
+    "paper_0028": {
+      "precision": 0.25,
+      "recall": 0.3077,
+      "f1": 0.2759,
+      "n_generated": 8,
+      "n_ground_truth": 13,
+      "covered_gt": [
+        "point_003",
+        "point_004",
+        "point_009",
+        "point_012"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_010",
+        "point_011",
+        "point_013"
+      ],
+      "latency_seconds": 246.78
+    },
+    "paper_0029": {
+      "precision": 0.375,
+      "recall": 0.2222,
+      "f1": 0.2791,
+      "n_generated": 8,
+      "n_ground_truth": 9,
+      "covered_gt": [
+        "point_002",
+        "point_009"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008"
+      ],
+      "latency_seconds": 287.14
+    },
+    "paper_0030": {
+      "precision": 0.125,
+      "recall": 0.0833,
+      "f1": 0.1,
+      "n_generated": 8,
+      "n_ground_truth": 12,
+      "covered_gt": [
+        "point_002"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 293.11
+    },
+    "paper_0031": {
+      "precision": 0.75,
+      "recall": 0.4167,
+      "f1": 0.5357,
+      "n_generated": 8,
+      "n_ground_truth": 12,
+      "covered_gt": [
+        "point_001",
+        "point_004",
+        "point_008",
+        "point_009",
+        "point_010"
+      ],
+      "uncovered_gt": [
+        "point_002",
+        "point_003",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 121.21
+    },
+    "paper_0032": {
+      "precision": 0.8333,
+      "recall": 0.4167,
+      "f1": 0.5556,
+      "n_generated": 6,
+      "n_ground_truth": 12,
+      "covered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_007",
+        "point_009"
+      ],
+      "uncovered_gt": [
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_008",
+        "point_010",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 119.34
+    },
+    "paper_0033": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 12,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 227.56
     },
     "paper_0034": {
       "precision": 0.375,
@@ -566,6 +828,57 @@
         "point_012"
       ],
       "latency_seconds": 107.3
+    },
+    "paper_0036": {
+      "precision": 0.4,
+      "recall": 0.2143,
+      "f1": 0.2791,
+      "n_generated": 5,
+      "n_ground_truth": 14,
+      "covered_gt": [
+        "point_003",
+        "point_004",
+        "point_005"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013",
+        "point_014"
+      ],
+      "latency_seconds": 99.32
+    },
+    "paper_0037": {
+      "precision": 0.5556,
+      "recall": 0.4615,
+      "f1": 0.5042,
+      "n_generated": 9,
+      "n_ground_truth": 13,
+      "covered_gt": [
+        "point_001",
+        "point_002",
+        "point_005",
+        "point_006",
+        "point_008",
+        "point_009"
+      ],
+      "uncovered_gt": [
+        "point_003",
+        "point_004",
+        "point_007",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013"
+      ],
+      "latency_seconds": 302.06
     },
     "paper_0038": {
       "precision": 0.0,
@@ -756,6 +1069,32 @@
       ],
       "latency_seconds": 331.32
     },
+    "paper_0046": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 15,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013",
+        "point_014",
+        "point_015"
+      ],
+      "latency_seconds": 230.71
+    },
     "paper_0047": {
       "precision": 0.0,
       "recall": 0.0,
@@ -829,6 +1168,32 @@
         "point_015"
       ],
       "latency_seconds": 176.28
+    },
+    "paper_0050": {
+      "precision": 0.5,
+      "recall": 0.5714,
+      "f1": 0.5333,
+      "n_generated": 8,
+      "n_ground_truth": 14,
+      "covered_gt": [
+        "point_001",
+        "point_002",
+        "point_004",
+        "point_005",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_013"
+      ],
+      "uncovered_gt": [
+        "point_003",
+        "point_006",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_014"
+      ],
+      "latency_seconds": 253.61
     },
     "paper_0051": {
       "precision": 0.5,
@@ -955,6 +1320,31 @@
       ],
       "latency_seconds": 137.61
     },
+    "paper_0056": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 14,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013",
+        "point_014"
+      ],
+      "latency_seconds": 168.49
+    },
     "paper_0057": {
       "precision": 0.625,
       "recall": 0.5714,
@@ -980,6 +1370,28 @@
         "point_012"
       ],
       "latency_seconds": 132.19
+    },
+    "paper_0058": {
+      "precision": 0.4,
+      "recall": 0.1,
+      "f1": 0.16,
+      "n_generated": 5,
+      "n_ground_truth": 10,
+      "covered_gt": [
+        "point_002"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010"
+      ],
+      "latency_seconds": 87.39
     },
     "paper_0059": {
       "precision": 0.0,
@@ -1176,6 +1588,29 @@
       ],
       "latency_seconds": 115.1
     },
+    "paper_0067": {
+      "precision": 0.125,
+      "recall": 0.0909,
+      "f1": 0.1053,
+      "n_generated": 8,
+      "n_ground_truth": 11,
+      "covered_gt": [
+        "point_004"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011"
+      ],
+      "latency_seconds": 101.21
+    },
     "paper_0068": {
       "precision": 0.25,
       "recall": 0.1429,
@@ -1194,6 +1629,29 @@
         "point_007"
       ],
       "latency_seconds": 330.15
+    },
+    "paper_0069": {
+      "precision": 0.7143,
+      "recall": 0.1818,
+      "f1": 0.2899,
+      "n_generated": 7,
+      "n_ground_truth": 11,
+      "covered_gt": [
+        "point_004",
+        "point_007"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_005",
+        "point_006",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011"
+      ],
+      "latency_seconds": 162.25
     },
     "paper_0070": {
       "precision": 0.5,
@@ -1220,6 +1678,51 @@
       ],
       "latency_seconds": 265.49
     },
+    "paper_0071": {
+      "precision": 0.7143,
+      "recall": 0.5,
+      "f1": 0.5882,
+      "n_generated": 7,
+      "n_ground_truth": 10,
+      "covered_gt": [
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_007"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_006",
+        "point_008",
+        "point_009",
+        "point_010"
+      ],
+      "latency_seconds": 174.18
+    },
+    "paper_0072": {
+      "precision": 0.3333,
+      "recall": 0.1818,
+      "f1": 0.2353,
+      "n_generated": 6,
+      "n_ground_truth": 11,
+      "covered_gt": [
+        "point_001",
+        "point_009"
+      ],
+      "uncovered_gt": [
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_010",
+        "point_011"
+      ],
+      "latency_seconds": 99.92
+    },
     "paper_0073": {
       "precision": 0.0,
       "recall": 0.0,
@@ -1243,6 +1746,56 @@
         "point_013"
       ],
       "latency_seconds": 187.87
+    },
+    "paper_0074": {
+      "precision": 0.5714,
+      "recall": 0.3846,
+      "f1": 0.4598,
+      "n_generated": 7,
+      "n_ground_truth": 13,
+      "covered_gt": [
+        "point_001",
+        "point_008",
+        "point_009",
+        "point_011",
+        "point_012"
+      ],
+      "uncovered_gt": [
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_010",
+        "point_013"
+      ],
+      "latency_seconds": 207.57
+    },
+    "paper_0075": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 14,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011",
+        "point_012",
+        "point_013",
+        "point_014"
+      ],
+      "latency_seconds": 159.94
     },
     "paper_0076": {
       "precision": 0.0,
@@ -1552,6 +2105,28 @@
       ],
       "latency_seconds": 144.42
     },
+    "paper_0089": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "n_generated": 0,
+      "n_ground_truth": 11,
+      "covered_gt": [],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_010",
+        "point_011"
+      ],
+      "latency_seconds": 146.84
+    },
     "paper_0090": {
       "precision": 0.375,
       "recall": 0.3077,
@@ -1697,6 +2272,32 @@
       ],
       "latency_seconds": 194.52
     },
+    "paper_0096": {
+      "precision": 0.75,
+      "recall": 0.5714,
+      "f1": 0.6486,
+      "n_generated": 8,
+      "n_ground_truth": 14,
+      "covered_gt": [
+        "point_002",
+        "point_003",
+        "point_004",
+        "point_005",
+        "point_007",
+        "point_009",
+        "point_010",
+        "point_013"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_006",
+        "point_008",
+        "point_011",
+        "point_012",
+        "point_014"
+      ],
+      "latency_seconds": 119.83
+    },
     "paper_0097": {
       "precision": 0.5,
       "recall": 0.6667,
@@ -1717,6 +2318,30 @@
         "point_009"
       ],
       "latency_seconds": 126.34
+    },
+    "paper_0098": {
+      "precision": 0.25,
+      "recall": 0.1667,
+      "f1": 0.2,
+      "n_generated": 8,
+      "n_ground_truth": 12,
+      "covered_gt": [
+        "point_004",
+        "point_010"
+      ],
+      "uncovered_gt": [
+        "point_001",
+        "point_002",
+        "point_003",
+        "point_005",
+        "point_006",
+        "point_007",
+        "point_008",
+        "point_009",
+        "point_011",
+        "point_012"
+      ],
+      "latency_seconds": 251.83
     },
     "paper_0099": {
       "precision": 0.4286,
@@ -1764,10 +2389,10 @@
     }
   },
   "aggregate": {
-    "mean_precision": 0.441,
-    "mean_recall": 0.3285,
-    "mean_f1": 0.3665,
-    "n_papers": 74,
-    "mean_latency_seconds": 221.71
+    "mean_precision": 0.4215,
+    "mean_recall": 0.3023,
+    "mean_f1": 0.3419,
+    "n_papers": 100,
+    "mean_latency_seconds": 214.4
   }
 }
